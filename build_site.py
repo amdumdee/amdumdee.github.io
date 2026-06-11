@@ -216,9 +216,17 @@ def render_sources(doc):
 
 # ── Render one report ─────────────────────────────────────────────────────────
 
+GITHUB_BLOB = 'https://github.com/AmDumDee/global-threat-intel/blob/main'
+
 def render_report(entry, is_rollup=False):
     doc = load_yaml(entry['path'])
     H = escape
+    # path of this YAML relative to the data repo root → GitHub source link
+    try:
+        rel = entry['path'].relative_to(REPO_ROOT).as_posix()
+        source_url = f'{GITHUB_BLOB}/{rel}'
+    except Exception:
+        source_url = ''
 
     if is_rollup:
         summ = doc.get('rollup_summary', {})
@@ -250,6 +258,8 @@ def render_report(entry, is_rollup=False):
     html.append(f'<h1>{H(title)}</h1>')
     if rid:
         html.append(f'<div class="rid">{H(rid)}</div>')
+    if source_url:
+        html.append(f'<a class="src-link" href="{H(source_url)}" target="_blank" rel="noopener">View raw analysis on GitHub ↗</a>')
     html.append('</header>')
 
     if exec_sum:
@@ -372,6 +382,10 @@ a:hover{text-decoration:underline}
 h1{font-family:var(--serif);font-size:2.05rem;font-weight:400;line-height:1.18;
   color:var(--txt);letter-spacing:-.015em}
 .rid{font-family:var(--mono);font-size:11px;color:var(--txt3);margin-top:.6rem}
+.src-link{display:inline-block;margin-top:.7rem;font-family:var(--sans);font-size:12px;
+  font-weight:600;color:var(--txt3);border:1px solid var(--border);border-radius:6px;
+  padding:4px 10px}
+.src-link:hover{color:var(--acc);border-color:var(--acc);text-decoration:none}
 
 .box{background:var(--bg2);border:1px solid var(--border);border-radius:11px;
   padding:1.2rem 1.4rem;margin-bottom:1.8rem}
