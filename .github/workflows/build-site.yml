@@ -1,0 +1,49 @@
+name: Build site
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  repository_dispatch:
+    types: [ content-updated ]
+  schedule:
+    - cron: '0 6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+
+      - name: Clone threat-intel data repo
+        run: |
+          rm -rf _data/global-threat-intel
+          git clone --depth 1 https://github.com/AmDumDee/global-threat-intel _data/global-threat-intel
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Build site
+        run: python3 build_site.py
+
+      - name: Commit built site
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          rm -rf _data
+          git add threat-intel/index.html sitemap.xml llms.txt
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "build: rebuild site [skip ci]"
+            git push
+          fi
