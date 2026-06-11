@@ -7,13 +7,20 @@
 Site: https://amdumdee.com
 Threat intel archive: https://amdumdee.com/threat-intel/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 169
+Total reports: 176
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- June 10, 2026: Five-Front Escalation: Nation-State Reconnaissance, Supply Chain Weaponization, and Ransomware Market Maturation (https://amdumdee.com/threat-intel/#2026-06-10-multi-vector-nation-state-and-criminal-e)
+- June 9, 2026: Consent Drift: Meta AI Data Expansion and Platform Regulation Precedent Create Enterprise Privacy Governance Gap (https://amdumdee.com/threat-intel/#2026-06-09-meta-ai-data-expansion-privacy-governanc)
+- June 9, 2026: Broken Patch Model: Record Vulnerability Volumes and Unpatched Windows Defender Zero-Day Signal AI-Driven Security Crisis (https://amdumdee.com/threat-intel/#2026-06-09-windows-defender-zero-day-patch-tuesday-)
+- June 8, 2026: 2026-06-08-ai-trust-infrastructure-threats (https://amdumdee.com/threat-intel/#2026-06-08-ai-trust-infrastructure-threats)
+- June 7, 2026: Healthcare Data Extortion Meets Expanding AI Developer Surface (https://amdumdee.com/threat-intel/#2026-06-07-healthcare-breach-ai-terminal-surface-ex)
+- June 6, 2026: AI Finds Four-Year Cryptographic Flaw, WordPress Sites Seized, CISA Deadline Hits (https://amdumdee.com/threat-intel/#2026-06-06-ai-audit-zcash-flaw-wordpress-cisa-chatg)
+- June 5, 2026: AI-Democratized Attacks, Chinese IIS Espionage & Supply Chain Persistence: Week of June 5 (https://amdumdee.com/threat-intel/#2026-06-05-ai-enabled-threats-supply-chain-espionag)
 - June 4, 2026: AI Coding Agents as Supply Chain Attack Vectors: The Pipeline Hijack Risk (https://amdumdee.com/threat-intel/#2026-06-04-ai-agent-pipeline-hijack-risk)
 - June 3, 2026: AI-Powered Cyber Threats Cross the Threshold: Autonomous Worms, Executive Espionage, and State-Linked Ransomware Infrastructure (https://amdumdee.com/threat-intel/#2026-06-03-ai-worms-executive-espionage-crypto-sanc)
 - June 2, 2026: AI-Powered Offense: Attackers Now Test Against Your Defenses Before Striking (https://amdumdee.com/threat-intel/#2026-06-02-ai-malware-labs-credential-theft-android)
@@ -22,10 +29,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - May 30, 2026: Multi-Vector Threat Surge: VPN Bypass, Linux Root Exploit, 17M-Device Botnet, Signal Phishing, and Telecom Data Leak (https://amdumdee.com/threat-intel/#2026-05-30-multi-vector-threat-surge)
 - May 29, 2026: AI Platforms Weaponized as Trusted Phishing Infrastructure (https://amdumdee.com/threat-intel/#2026-05-29-ai-platform-phishing-credential-theft-wa)
 - May 28, 2026: Unpatched Code Repository RCE, 6M-Record Social Engineering Breach, and Imminent Frontier AI Release Converge (https://amdumdee.com/threat-intel/#2026-05-28-gogs-rce-carnival-breach-ai-capability-s)
-- May 27, 2026: Triple Threat: AI Chatbot Poisoning, Banking Trojans, and SharePoint RCE Converge (https://amdumdee.com/threat-intel/#2026-05-27-ai-poisoning-banking-trojans-sharepoint-)
-- May 26, 2026: Trusted Software as Trojan Horse: State Actors and Supply Chain Attacks Converge (https://amdumdee.com/threat-intel/#2026-05-26-state-actor-supply-chain-endpoint-compro)
-- May 25, 2026: 2026-05-25-zero-click-mobile-cms-exploit-convergence (https://amdumdee.com/threat-intel/#2026-05-25-zero-click-mobile-cms-exploit-convergenc)
-- May 24, 2026: Trusted Websites and Developer Pipelines Weaponized in Simultaneous Multi-Vector Attack Wave (https://amdumdee.com/threat-intel/#2026-05-24-cms-cicd-infrastructure-compromise-wave)
-- May 23, 2026: Software Supply Chain Weaponized as Primary Attack Vector While Extortion Replaces Ransomware (https://amdumdee.com/threat-intel/#2026-05-23-supply-chain-extortion-convergence)
-- May 22, 2026: AI-Driven Enterprise Risk and Exploited Infrastructure Exposure (https://amdumdee.com/threat-intel/#2026-05-22-ai-driven-enterprise-risk)
-- May 21, 2026: AI and Software Supply Chain Trust Collapse (https://amdumdee.com/threat-intel/#2026-05-21-ai-supply-chain-trust-collapse)
