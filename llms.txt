@@ -7,13 +7,16 @@
 Site: https://amdumdee.com
 Threat intel archive: https://amdumdee.com/threat-intel/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 177
+Total reports: 180
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- June 13, 2026: Critical RCE Zero-Days in Splunk and Oracle PeopleSoft, Plus AI Model Export Control Precedent (https://amdumdee.com/threat-intel/#2026-06-13-rce-zerodays-and-ai-export-controls)
+- June 12, 2026: The $88 Phishing Operation: Outsider PhaaS and the Inverted Cost of Attack (https://amdumdee.com/threat-intel/#2026-06-12-outsider-phishing-economics)
+- June 12, 2026: Shadow Attack Surface: AI Phishing, Legacy Code, and Forgotten Field Tools Converge (https://amdumdee.com/threat-intel/#2026-06-12-shadow-attack-surface-pattern)
 - June 11, 2026: Cascading Trust Failures: AI Agent Exploitation, Physical Data Loss, and Critical Infrastructure Zero-Days (https://amdumdee.com/threat-intel/#2026-06-11-ai-agent-trust-failures-and-critical-inf)
 - June 10, 2026: Five-Front Escalation: Nation-State Reconnaissance, Supply Chain Weaponization, and Ransomware Market Maturation (https://amdumdee.com/threat-intel/#2026-06-10-multi-vector-nation-state-and-criminal-e)
 - June 9, 2026: Consent Drift: Meta AI Data Expansion and Platform Regulation Precedent Create Enterprise Privacy Governance Gap (https://amdumdee.com/threat-intel/#2026-06-09-meta-ai-data-expansion-privacy-governanc)
@@ -26,6 +29,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - June 3, 2026: AI-Powered Cyber Threats Cross the Threshold: Autonomous Worms, Executive Espionage, and State-Linked Ransomware Infrastructure (https://amdumdee.com/threat-intel/#2026-06-03-ai-worms-executive-espionage-crypto-sanc)
 - June 2, 2026: AI-Powered Offense: Attackers Now Test Against Your Defenses Before Striking (https://amdumdee.com/threat-intel/#2026-06-02-ai-malware-labs-credential-theft-android)
 - June 1, 2026: Triple Threat: Developer Supply Chain Compromise, AI Account Takeover, and Commercial Surveillance of Military Personnel (https://amdumdee.com/threat-intel/#2026-06-01-supply-chain-ai-exploitation-location-su)
-- May 31, 2026: Criminal Infrastructure Hidden in Plain Sight: Botnets, Forged VPNs, and the Perimeter That No Longer Exists (https://amdumdee.com/threat-intel/#2026-05-31-botnet-vpn-abuse-infrastructure-risk)
-- May 30, 2026: Multi-Vector Threat Surge: VPN Bypass, Linux Root Exploit, 17M-Device Botnet, Signal Phishing, and Telecom Data Leak (https://amdumdee.com/threat-intel/#2026-05-30-multi-vector-threat-surge)
-- May 29, 2026: AI Platforms Weaponized as Trusted Phishing Infrastructure (https://amdumdee.com/threat-intel/#2026-05-29-ai-platform-phishing-credential-theft-wa)
