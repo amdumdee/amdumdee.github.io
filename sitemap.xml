@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://amdumdee.com/</loc></url>
   <url><loc>https://amdumdee.com/threat-intel/</loc></url>
+  <url><loc>https://amdumdee.com/threat-intel/#2026-06-15-checkpoint-vpn-zeroday-qilin-ransomware</loc></url>
+  <url><loc>https://amdumdee.com/threat-intel/#2026-06-14-ai-phishing-service-takedown</loc></url>
   <url><loc>https://amdumdee.com/threat-intel/#2026-06-13-rce-zerodays-and-ai-export-controls</loc></url>
   <url><loc>https://amdumdee.com/threat-intel/#2026-06-12-outsider-phishing-economics</loc></url>
   <url><loc>https://amdumdee.com/threat-intel/#2026-06-12-shadow-attack-surface-pattern</loc></url>
@@ -182,4 +184,5 @@
   <url><loc>https://amdumdee.com/threat-intel/#2025-12-28-mongobleed-conde-nast-breach-unpatched-r</loc></url>
   <url><loc>https://amdumdee.com/threat-intel/#2025-12-26-trust-wallet-langchain-deployment-key-co</loc></url>
   <url><loc>https://amdumdee.com/threat-intel/#2025-12-25-fortinet-2fa-bypass-mongodb-unpatched-le</loc></url>
+  <url><loc>https://amdumdee.com/threat-intel/#rollup-2026-05</loc></url>
 </urlset>
