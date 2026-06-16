@@ -7,7 +7,7 @@
 Site: https://amdumdee.com
 Threat intel archive: https://amdumdee.com/threat-intel/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 182
+Total reports: 183
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
@@ -15,6 +15,7 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 
 ## Most recent reports
 - June 15, 2026: Active Exploitation of Check Point VPN Zero-Day by Qilin Ransomware Affiliate (https://amdumdee.com/threat-intel/#2026-06-15-checkpoint-vpn-zeroday-qilin-ransomware)
+- June 15, 2026: Trusted Business Platforms Become the Primary Cyber Attack Surface (https://amdumdee.com/threat-intel/#2026-06-15-business-trust-attack-trends)
 - June 14, 2026: AI-Powered Phishing-as-a-Service Takedown: Outsider Enterprise (https://amdumdee.com/threat-intel/#2026-06-14-ai-phishing-service-takedown)
 - June 13, 2026: Critical RCE Zero-Days in Splunk and Oracle PeopleSoft, Plus AI Model Export Control Precedent (https://amdumdee.com/threat-intel/#2026-06-13-rce-zerodays-and-ai-export-controls)
 - June 12, 2026: The $88 Phishing Operation: Outsider PhaaS and the Inverted Cost of Attack (https://amdumdee.com/threat-intel/#2026-06-12-outsider-phishing-economics)
@@ -28,4 +29,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - June 6, 2026: AI Finds Four-Year Cryptographic Flaw, WordPress Sites Seized, CISA Deadline Hits (https://amdumdee.com/threat-intel/#2026-06-06-ai-audit-zcash-flaw-wordpress-cisa-chatg)
 - June 5, 2026: AI-Democratized Attacks, Chinese IIS Espionage & Supply Chain Persistence: Week of June 5 (https://amdumdee.com/threat-intel/#2026-06-05-ai-enabled-threats-supply-chain-espionag)
 - June 4, 2026: AI Coding Agents as Supply Chain Attack Vectors: The Pipeline Hijack Risk (https://amdumdee.com/threat-intel/#2026-06-04-ai-agent-pipeline-hijack-risk)
-- June 3, 2026: AI-Powered Cyber Threats Cross the Threshold: Autonomous Worms, Executive Espionage, and State-Linked Ransomware Infrastructure (https://amdumdee.com/threat-intel/#2026-06-03-ai-worms-executive-espionage-crypto-sanc)
