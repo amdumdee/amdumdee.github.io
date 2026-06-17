@@ -7,13 +7,14 @@
 Site: https://amdumdee.com
 Threat intel archive: https://amdumdee.com/threat-intel/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 183
+Total reports: 184
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- June 16, 2026: Converged Trust Platform Abuse: SaaS, Cloud AI, and Identity Layers Weaponized (https://amdumdee.com/threat-intel/#2026-06-16-converged-trust-platform-abuse)
 - June 15, 2026: Active Exploitation of Check Point VPN Zero-Day by Qilin Ransomware Affiliate (https://amdumdee.com/threat-intel/#2026-06-15-checkpoint-vpn-zeroday-qilin-ransomware)
 - June 15, 2026: Trusted Business Platforms Become the Primary Cyber Attack Surface (https://amdumdee.com/threat-intel/#2026-06-15-business-trust-attack-trends)
 - June 14, 2026: AI-Powered Phishing-as-a-Service Takedown: Outsider Enterprise (https://amdumdee.com/threat-intel/#2026-06-14-ai-phishing-service-takedown)
@@ -28,4 +29,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - June 7, 2026: Healthcare Data Extortion Meets Expanding AI Developer Surface (https://amdumdee.com/threat-intel/#2026-06-07-healthcare-breach-ai-terminal-surface-ex)
 - June 6, 2026: AI Finds Four-Year Cryptographic Flaw, WordPress Sites Seized, CISA Deadline Hits (https://amdumdee.com/threat-intel/#2026-06-06-ai-audit-zcash-flaw-wordpress-cisa-chatg)
 - June 5, 2026: AI-Democratized Attacks, Chinese IIS Espionage & Supply Chain Persistence: Week of June 5 (https://amdumdee.com/threat-intel/#2026-06-05-ai-enabled-threats-supply-chain-espionag)
-- June 4, 2026: AI Coding Agents as Supply Chain Attack Vectors: The Pipeline Hijack Risk (https://amdumdee.com/threat-intel/#2026-06-04-ai-agent-pipeline-hijack-risk)
