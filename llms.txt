@@ -7,13 +7,14 @@
 Site: https://amdumdee.com
 Threat intel archive: https://amdumdee.com/threat-intel/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 185
+Total reports: 186
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- June 18, 2026: Weekly Threat Brief: Critical Edge RCE, Vendor-Chain Breach, and Cloud-Trusted C2 Abuse (https://amdumdee.com/threat-intel/#2026-06-18-nginx-rce-vendor-breach-teams-c2)
 - June 17, 2026: The Trust Economy Is Compromised: Fake Reputation Networks, Mobile Takeover, and Regulatory Exposure Converge (https://amdumdee.com/threat-intel/#2026-06-17-trust-infrastructure-under-attack)
 - June 16, 2026: Converged Trust Platform Abuse: SaaS, Cloud AI, and Identity Layers Weaponized (https://amdumdee.com/threat-intel/#2026-06-16-converged-trust-platform-abuse)
 - June 15, 2026: Active Exploitation of Check Point VPN Zero-Day by Qilin Ransomware Affiliate (https://amdumdee.com/threat-intel/#2026-06-15-checkpoint-vpn-zeroday-qilin-ransomware)
@@ -28,4 +29,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - June 9, 2026: Broken Patch Model: Record Vulnerability Volumes and Unpatched Windows Defender Zero-Day Signal AI-Driven Security Crisis (https://amdumdee.com/threat-intel/#2026-06-09-windows-defender-zero-day-patch-tuesday-)
 - June 8, 2026: 2026-06-08-ai-trust-infrastructure-threats (https://amdumdee.com/threat-intel/#2026-06-08-ai-trust-infrastructure-threats)
 - June 7, 2026: Healthcare Data Extortion Meets Expanding AI Developer Surface (https://amdumdee.com/threat-intel/#2026-06-07-healthcare-breach-ai-terminal-surface-ex)
-- June 6, 2026: AI Finds Four-Year Cryptographic Flaw, WordPress Sites Seized, CISA Deadline Hits (https://amdumdee.com/threat-intel/#2026-06-06-ai-audit-zcash-flaw-wordpress-cisa-chatg)
