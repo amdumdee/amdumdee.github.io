@@ -7,13 +7,14 @@
 Site: https://amdumdee.com
 Threat intel archive: https://amdumdee.com/threat-intel/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 193
+Total reports: 194
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- June 26, 2026: Social Engineering Scales Up: Signal Takeovers, Fake AI Workspaces, and Government Network Infiltration on a Single Day (https://amdumdee.com/threat-intel/#2026-06-26-social-engineering-ai-platforms-signal-e)
 - June 25, 2026: Browser Extension Supply Chain Risk & AI Security Advice Gaps: Dual Enterprise Blind Spots (https://amdumdee.com/threat-intel/#2026-06-25-browser-extension-supply-chain-ai-securi)
 - June 24, 2026: Software Supply Chain Under Siege: CI/CD Hijacking Hits Microsoft, Google, and 300+ Repositories (https://amdumdee.com/threat-intel/#2026-06-24-supply-chain-cicd-critical-exploit-wave)
 - June 23, 2026: AI Trust Collapse: Fake Skills Pass All Scanners, AI Research Manipulated by Forum Comments, Tata IP Breach Exposes Apple Supply Chain (https://amdumdee.com/threat-intel/#2026-06-23-ai-agent-skill-poisoning-tata-breach-ai-)
@@ -28,4 +29,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - June 15, 2026: Trusted Business Platforms Become the Primary Cyber Attack Surface (https://amdumdee.com/threat-intel/#2026-06-15-business-trust-attack-trends)
 - June 14, 2026: AI-Powered Phishing-as-a-Service Takedown: Outsider Enterprise (https://amdumdee.com/threat-intel/#2026-06-14-ai-phishing-service-takedown)
 - June 13, 2026: Critical RCE Zero-Days in Splunk and Oracle PeopleSoft, Plus AI Model Export Control Precedent (https://amdumdee.com/threat-intel/#2026-06-13-rce-zerodays-and-ai-export-controls)
-- June 12, 2026: The $88 Phishing Operation: Outsider PhaaS and the Inverted Cost of Attack (https://amdumdee.com/threat-intel/#2026-06-12-outsider-phishing-economics)
