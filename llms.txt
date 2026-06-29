@@ -6,8 +6,10 @@
 
 Site: https://amdumdee.com
 Threat intel archive: https://amdumdee.com/threat-intel/
+Rollups: https://amdumdee.com/rollups/
+Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 195
+Total reports: 195 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
