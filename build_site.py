@@ -36,14 +36,22 @@ def load_yaml(path):
 # ── File discovery ────────────────────────────────────────────────────────────
 
 DATE_RE   = re.compile(r'(\d{4})-(\d{2})-(\d{2})-(.+)\.ya?ml$')
-ROLLUP_RE = re.compile(r'(\d{4})-(Q[1-4]|H[12]|\d{2}|annual)-rollup\.ya?ml$', re.IGNORECASE)
+ROLLUP_RE = re.compile(r'(\d{4})-(W\d{2}|Q[1-4]|\d{2}|annual)-rollup\.ya?ml$', re.IGNORECASE)
 
 def discover():
-    """Return (reports, rollups) as sorted lists of dicts."""
+    """Return (reports, rollups, briefings) as sorted lists of dicts.
+
+    reports/rollups feed the rendered /threat-intel/ archive.
+    briefings are counted here (folder-driven) so the root index card can
+    light up automatically once any file lands in the briefings/ folder.
+    """
     reports, rollups = [], []
     for p in REPO_ROOT.rglob('*.y*ml'):
         # skip the framework / config files
         if 'framework' in p.name.lower() or p.name.startswith('.'):
+            continue
+        # briefings live in their own folder and are handled separately below
+        if 'briefings' in p.parts:
             continue
         name = p.name
         rm = ROLLUP_RE.search(name)
@@ -59,7 +67,17 @@ def discover():
             })
     reports.sort(key=lambda r: r['date'], reverse=True)   # newest first
     rollups.sort(key=lambda r: (r['year'], r['period']), reverse=True)
-    return reports, rollups
+
+    # ── briefings: folder-driven, recursive (supports briefings/ or briefings/YYYY/) ──
+    briefings = []
+    bdir = REPO_ROOT / 'briefings'
+    if bdir.is_dir():
+        for p in sorted(bdir.rglob('*.y*ml')):
+            if p.name.startswith('.') or 'framework' in p.name.lower():
+                continue
+            briefings.append({'path': p, 'name': p.name})
+
+    return reports, rollups, briefings
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -218,7 +236,7 @@ def render_sources(doc):
 
 GITHUB_BLOB = 'https://github.com/AmDumDee/global-threat-intel/blob/main'
 
-def render_report(entry, is_rollup=False):
+def render_report(entry, is_rollup=False, is_briefing=False):
     doc = load_yaml(entry['path'])
     H = escape
     # path of this YAML relative to the data repo root → GitHub source link
@@ -228,7 +246,20 @@ def render_report(entry, is_rollup=False):
     except Exception:
         source_url = ''
 
-    if is_rollup:
+    if is_briefing:
+        # accept either briefing_summary or rollup_summary-style top key
+        summ = doc.get('briefing_summary') or doc.get('summary') or {}
+        if not isinstance(summ, dict):
+            summ = {}
+        title = first_str(summ, 'title') or entry['path'].stem.replace('-', ' ').title()
+        rid   = first_str(summ, 'briefing_id') or first_str(summ, 'id')
+        ptype = first_str(summ, 'period_type') or first_str(summ, 'briefing_type')
+        period = first_str(summ, 'period')
+        badge = ' · '.join(x for x in ['BRIEFING', ptype.title() if ptype else '', period] if x)
+        exec_sum = first_str(summ, 'executive_summary') or first_str(summ, 'summary')
+        skip_key = 'briefing_summary' if 'briefing_summary' in doc else 'summary'
+        body_root = {k: v for k, v in doc.items() if k != skip_key}
+    elif is_rollup:
         summ = doc.get('rollup_summary', {})
         title = first_str(summ, 'title') or entry['path'].stem
         rid   = first_str(summ, 'rollup_id')
@@ -253,7 +284,7 @@ def render_report(entry, is_rollup=False):
 
     html = ['<article>']
     html.append('<header class="rep-header">')
-    cls = 'badge rollup-badge' if is_rollup else 'badge'
+    cls = "badge rollup-badge" if (is_rollup or is_briefing) else "badge"
     html.append(f'<div class="{cls}">{H(badge)}</div>')
     html.append(f'<h1>{H(title)}</h1>')
     if rid:
@@ -304,7 +335,7 @@ def render_report(entry, is_rollup=False):
                 html.append('</ul>')
 
     # sources last (only on daily reports; rollups point to archive)
-    if not is_rollup:
+    if not (is_rollup or is_briefing):
         html.append(render_sources(doc))
 
     html.append('</article>')
@@ -450,30 +481,25 @@ h1{font-family:var(--serif);font-size:2.05rem;font-weight:400;line-height:1.18;
 """
 
 JS = """
-const REPORTS=__REPORTS__;
-const ROLLUPS=__ROLLUPS__;
+const ITEMS=__ITEMS__;
 const DOCS=__DOCS__;
+const NAVLABEL=__NAVLABEL__;
 let active=null;
 
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 
 function buildNav(){
   const el=document.getElementById('nav');
-  if(ROLLUPS.length){
-    const h=document.createElement('div');h.className='nav-sec';h.textContent='Rollups';el.appendChild(h);
-    ROLLUPS.forEach(r=>{
-      const b=document.createElement('button');b.className='nav-item nav-roll';b.dataset.id=r.id;
-      b.innerHTML=`${esc(r.label)}`;
-      b.addEventListener('click',()=>{load(r.id);closeMobile();});
-      el.appendChild(b);
-    });
-  }
-  const h2=document.createElement('div');h2.className='nav-sec';h2.textContent='Daily Reports';el.appendChild(h2);
-  REPORTS.forEach(r=>{
+  const h2=document.createElement('div');h2.className='nav-sec';h2.textContent=NAVLABEL;el.appendChild(h2);
+  ITEMS.forEach(r=>{
     const b=document.createElement('button');b.className='nav-item';b.dataset.id=r.id;
-    const sev=(r.sev||'').toLowerCase();
-    b.innerHTML=`<div class="nav-date">${esc(r.datePretty)}</div>`+
-      `<span class="dot ${sev}"></span>${esc(r.title)}`;
+    if(r.datePretty){
+      const sev=(r.sev||'').toLowerCase();
+      b.innerHTML=`<div class="nav-date">${esc(r.datePretty)}</div>`+
+        `<span class="dot ${sev}"></span>${esc(r.title)}`;
+    }else{
+      b.innerHTML=(r.label?`<div class="nav-date">${esc(r.label)}</div>`:'')+esc(r.title);
+    }
     b.addEventListener('click',()=>{load(r.id);closeMobile();});
     el.appendChild(b);
   });
@@ -516,26 +542,26 @@ SHELL = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Global Threat Intelligence — AmDumDee</title>
-<meta name="description" content="Daily executive cybersecurity threat intelligence. Original analysis translating real threats into board-level business decisions. Every report sourced.">
+<title>__PAGE_TITLE__ — AmDumDee</title>
+<meta name="description" content="__PAGE_DESC__">
 <meta name="author" content="Am Dum Dee">
 <meta name="keywords" content="threat intelligence, cybersecurity, CISO, board governance, cyber risk, executive briefing">
-<meta property="og:title" content="Global Threat Intelligence — AmDumDee">
-<meta property="og:description" content="Daily executive threat intelligence. Original analysis, business-translated, every source cited.">
+<meta property="og:title" content="__PAGE_TITLE__ — AmDumDee">
+<meta property="og:description" content="__PAGE_DESC__">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://amdumdee.com">
 <style>__CSS__</style>
 </head>
 <body>
 <div id="rbar"></div>
-<button class="menu-fab" onclick="toggleSidebar()">☰ Reports</button>
+<button class="menu-fab" onclick="toggleSidebar()">☰ __NAV_LABEL__</button>
 <div class="shell">
   <nav class="sidebar" id="sidebar">
     <div class="s-top">
-      <div class="s-brand">Global Threat Intelligence</div>
-      <div class="s-tag">Executive cyber risk, translated. Daily. Every source cited.</div>
+      <div class="s-brand">__BRAND__</div>
+      <div class="s-tag">__BRAND_TAG__</div>
     </div>
-    <div class="s-search"><input id="search" type="search" placeholder="Search reports…"></div>
+    <div class="s-search"><input id="search" type="search" placeholder="Search __SEARCH_NOUN__…"></div>
     <div class="s-scroll" id="nav"></div>
     <div class="s-foot">
       <a href="/">← amdumdee.com</a>
@@ -546,16 +572,16 @@ SHELL = """<!DOCTYPE html>
   <main class="main" id="main">
     <div id="content">
       <div class="c-outer welcome">
-        <h1>Global Threat Intelligence</h1>
-        <p class="w-tag">Executive cyber risk, translated — daily.</p>
+        <h1>__BRAND__</h1>
+        <p class="w-tag">__WELCOME_TAG__</p>
         <div class="w-meta">
-          <span>__COUNT__ reports</span>
+          <span>__COUNT__ __COUNT_NOUN__</span>
           <span>Business-focused</span>
           <span>Original analysis</span>
           <span>Every source cited</span>
         </div>
-        <p class="w-body">Cybersecurity threats explained for the people who make the decisions — CISOs, CTOs, and boards. Not CVE scores. Not vendor pitches. Just what each threat means for revenue, liability, and governance, with every claim traced to its source.</p>
-        <button class="start" onclick="load((ROLLUPS[0]||REPORTS[0]).id)">Read the latest →</button>
+        <p class="w-body">__WELCOME_BODY__</p>
+        <button class="start" onclick="ITEMS.length&&load(ITEMS[0].id)">Read the latest →</button>
       </div>
     </div>
   </main>
@@ -568,20 +594,48 @@ __JS__
 
 # ── Build ─────────────────────────────────────────────────────────────────────
 
-def main():
-    OUT_DIR.mkdir(exist_ok=True)
-    reports, rollups = discover()
-    print(f"Found {len(reports)} reports, {len(rollups)} rollups")
+def build_page(out_dir, items_nav, docs, *, page_title, page_desc, brand,
+               brand_tag, search_noun, nav_label, welcome_tag, count_noun,
+               welcome_body):
+    """Render one self-contained page (daily / rollups / briefings)."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    items_json = json.dumps(items_nav, separators=(',', ':'))
+    docs_json  = json.dumps(docs, separators=(',', ':'))
+    js = (JS.replace('__ITEMS__', items_json)
+            .replace('__DOCS__', docs_json)
+            .replace('__NAVLABEL__', json.dumps(nav_label)))
+    html = (SHELL.replace('__CSS__', CSS)
+                 .replace('__JS__', js)
+                 .replace('__PAGE_TITLE__', escape(page_title))
+                 .replace('__PAGE_DESC__', escape(page_desc))
+                 .replace('__BRAND__', escape(brand))
+                 .replace('__BRAND_TAG__', escape(brand_tag))
+                 .replace('__SEARCH_NOUN__', escape(search_noun))
+                 .replace('__NAV_LABEL__', escape(nav_label))
+                 .replace('__WELCOME_TAG__', escape(welcome_tag))
+                 .replace('__COUNT__', str(len(items_nav)))
+                 .replace('__COUNT_NOUN__', escape(count_noun))
+                 .replace('__WELCOME_BODY__', escape(welcome_body)))
+    out = out_dir / 'index.html'
+    out.write_text(html, encoding='utf-8')
+    kb = out.stat().st_size // 1024
+    print(f"✓ {out} — {kb} KB, {len(docs)} pages")
+    return out
 
-    docs = {}
-    rep_nav, roll_nav = [], []
+
+def main():
+    reports, rollups, briefings = discover()
+    print(f"Found {len(reports)} reports, {len(rollups)} rollups, {len(briefings)} briefings")
+
     errors = []
 
+    # ── 1. Daily reports → /threat-intel/ ──
+    rep_docs, rep_nav = {}, []
     for entry in reports:
         rid = entry['date'] + '-' + re.sub(r'[^a-z0-9]+', '-', entry['slug'].lower())[:40]
         try:
             html, title = render_report(entry, is_rollup=False)
-            docs[rid] = html
+            rep_docs[rid] = html
             doc = load_yaml(entry['path'])
             sev = first_str(doc.get('threat_summary', {}), 'severity_business') or \
                   (deep_find(doc, 'severity_business') or '')
@@ -591,35 +645,80 @@ def main():
         except Exception as e:
             errors.append((entry['path'].name, str(e)))
 
+    # ── 2. Rollups → /rollups/ ──
+    roll_docs, roll_nav = {}, []
     for entry in rollups:
         rid = f"rollup-{entry['year']}-{entry['period']}".lower()
         try:
             html, title = render_report(entry, is_rollup=True)
-            docs[rid] = html
-            label = f"{entry['year']} {entry['period']}"
-            roll_nav.append({'id': rid, 'label': label, 'title': title})
+            roll_docs[rid] = html
+            roll_nav.append({'id': rid, 'title': title,
+                             'label': f"{entry['year']} {entry['period']}"})
         except Exception as e:
             errors.append((entry['path'].name, str(e)))
 
-    reports_json = json.dumps(rep_nav, separators=(',', ':'))
-    rollups_json = json.dumps(roll_nav, separators=(',', ':'))
-    docs_json = json.dumps(docs, separators=(',', ':'))
+    # ── 3. Briefings → /briefings/ ──
+    brief_docs, brief_nav = {}, []
+    for entry in briefings:
+        rid = 'briefing-' + re.sub(r'[^a-z0-9]+', '-', entry['name'].lower().rsplit('.', 1)[0])[:50]
+        try:
+            html, title = render_report(entry, is_briefing=True)
+            brief_docs[rid] = html
+            brief_nav.append({'id': rid, 'title': title})
+        except Exception as e:
+            errors.append((entry['name'], str(e)))
 
-    js = (JS.replace('__REPORTS__', reports_json)
-            .replace('__ROLLUPS__', rollups_json)
-            .replace('__DOCS__', docs_json))
-    html = (SHELL.replace('__CSS__', CSS)
-                 .replace('__JS__', js)
-                 .replace('__COUNT__', str(len(reports))))
+    # ── render the three sibling pages ──
+    build_page(
+        Path('threat-intel'), rep_nav, rep_docs,
+        page_title='Global Threat Intelligence',
+        page_desc='Daily executive cybersecurity threat intelligence. Original analysis '
+                  'translating real threats into board-level business decisions. Every report sourced.',
+        brand='Global Threat Intelligence',
+        brand_tag='Executive cyber risk, translated. Daily. Every source cited.',
+        search_noun='reports', nav_label='Daily Reports',
+        welcome_tag='Executive cyber risk, translated - daily.',
+        count_noun='reports',
+        welcome_body='Cybersecurity threats explained for the people who make the decisions - '
+                     'CISOs, CTOs, and boards. Not CVE scores. Not vendor pitches. Just what each '
+                     'threat means for revenue, liability, and governance, with every claim traced to its source.',
+    )
+    build_page(
+        Path('rollups'), roll_nav, roll_docs,
+        page_title='Rollups — Global Threat Intelligence',
+        page_desc='Monthly and quarterly threat intelligence syntheses. The patterns and '
+                  'shifts behind the daily reports, distilled into a single board-ready read.',
+        brand='Rollups',
+        brand_tag='Monthly and quarterly syntheses. The patterns behind the daily reports.',
+        search_noun='rollups', nav_label='Rollups',
+        welcome_tag='The patterns behind the daily reports.',
+        count_noun='rollups',
+        welcome_body='Monthly and quarterly syntheses of the threat landscape - the shifts and '
+                     'patterns behind the daily reports, distilled into a single board-ready read.',
+    )
+    build_page(
+        Path('briefings'), brief_nav, brief_docs,
+        page_title='Briefings — Global Threat Intelligence',
+        page_desc='Deeper strategic threat intelligence briefings on the themes that matter '
+                  'most to boards: AI governance, supply chain, resilience economics.',
+        brand='Briefings',
+        brand_tag='Deeper strategic analysis on the themes that matter most to boards.',
+        search_noun='briefings', nav_label='Briefings',
+        welcome_tag='The themes that matter most to boards.',
+        count_noun='briefings',
+        welcome_body='Deeper strategic analysis on the themes that matter most to boards - '
+                     'AI governance, supply chain, resilience economics. Each briefing traced to its sources.',
+    )
 
-
-    # ── sitemap.xml (root-level, covers landing + all reports) ──
+    # ── sitemap.xml ──
     base = 'https://amdumdee.com'
-    urls = [f'{base}/', f'{base}/threat-intel/']
+    urls = [f'{base}/', f'{base}/threat-intel/', f'{base}/rollups/', f'{base}/briefings/']
     for r in rep_nav:
         urls.append(f"{base}/threat-intel/#{r['id']}")
     for r in roll_nav:
-        urls.append(f"{base}/threat-intel/#{r['id']}")
+        urls.append(f"{base}/rollups/#{r['id']}")
+    for r in brief_nav:
+        urls.append(f"{base}/briefings/#{r['id']}")
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
@@ -627,7 +726,7 @@ def main():
     sm.append('</urlset>')
     Path('sitemap.xml').write_text('\n'.join(sm), encoding='utf-8')
 
-    # ── llms.txt (AI-readable summary, aids citation) ──
+    # ── llms.txt ──
     newest = rep_nav[:15]
     lines = [
         '# AmDumDee — Global Threat Intelligence',
@@ -638,8 +737,10 @@ def main():
         '',
         'Site: https://amdumdee.com',
         'Threat intel archive: https://amdumdee.com/threat-intel/',
+        'Rollups: https://amdumdee.com/rollups/',
+        'Briefings: https://amdumdee.com/briefings/',
         'Source repository: https://github.com/AmDumDee/global-threat-intel',
-        f'Total reports: {len(rep_nav)}',
+        f'Total reports: {len(rep_nav)} | Rollups: {len(roll_nav)} | Briefings: {len(brief_nav)}',
         '',
         '## How to cite',
         'Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,',
@@ -653,12 +754,118 @@ def main():
     Path('llms.txt').write_text('\n'.join(lines), encoding='utf-8')
     print(f"  + sitemap.xml ({len(urls)} urls), llms.txt")
 
-    out = OUT_DIR / 'index.html'
-    out.write_text(html, encoding='utf-8')
-    kb = out.stat().st_size // 1024
-    print(f"\n✓ {out} — {kb} KB, {len(docs)} pages, {len(errors)} errors")
-    for n, e in errors[:8]:
-        print(f"  ! {n}: {e}")
+    if errors:
+        print(f"  ! {len(errors)} errors:")
+        for n, e in errors[:8]:
+            print(f"    {n}: {e}")
+
+    # ── root index.html publication cards (folder-driven, auto-updating) ──
+    write_root_cards(len(rep_nav), len(roll_nav), len(brief_nav))
+
+
+GH_TREE = 'https://github.com/AmDumDee/global-threat-intel/tree/main'
+
+def _plural(n, word):
+    return f'{n} {word}' if n == 1 else f'{n} {word}s'
+
+def _card(*, live, href, tag, title, desc, go, stat=None):
+    """Render one publication card. live → linked <a>, else inert <div>."""
+    open_t  = f'<a class="card live" href="{href}">' if live else '<div class="card soon">'
+    close_t = '</a>' if live else '</div>'
+    tag_cls = 'tag-live' if live else 'tag-soon'
+    go_style = '' if live else ' style="color:var(--txt3)"'
+    parts = [
+        f'        {open_t}',
+        '          <div class="card-top">',
+        f'            <span class="card-tag {tag_cls}">{tag}</span>',
+        '          </div>',
+        f'          <h3>{title}</h3>',
+        f'          <p>{desc}</p>',
+        f'          <span class="go"{go_style}>{go}</span>',
+    ]
+    if stat:
+        parts.append(f'          <div class="card-stat">{stat}</div>')
+    parts.append(f'        {close_t}')
+    return '\n'.join(parts)
+
+
+def write_root_cards(n_reports, n_rollups, n_briefings):
+    """Inject the three publication cards into the root index.html.
+
+    Each card is folder-driven: it goes live with a real count and a link the
+    moment its source folder has files, otherwise it shows "Coming soon".
+    """
+    idx = Path('index.html')
+    if not idx.exists():
+        print("  ! index.html not found — skipped root cards")
+        return
+    src = idx.read_text(encoding='utf-8')
+
+    cards = []
+
+    # 1 — Global Threat Intelligence (daily reports): always live
+    cards.append(_card(
+        live=True, href='/threat-intel/', tag='Live · Daily',
+        title='Global Threat Intelligence',
+        desc='Daily analysis of the most significant threats, translated into '
+             'strategic decisions for executives. Every report sourced and traceable.',
+        go='Enter the archive →',
+        stat=f'{_plural(n_reports, "report")} · updated daily',
+    ))
+
+    # 2 — Rollups: live when any file exists in rollups/
+    if n_rollups:
+        cards.append(_card(
+            live=True, href='/rollups/', tag='Live',
+            title='Rollups',
+            desc='Monthly and quarterly syntheses - the patterns and shifts behind '
+                 'the daily reports, distilled into a single board-ready read.',
+            go='Read the rollups →',
+            stat=_plural(n_rollups, "rollup"),
+        ))
+    else:
+        cards.append(_card(
+            live=False, tag='Coming soon', href='',
+            title='Rollups',
+            desc='Monthly and quarterly syntheses - the patterns and shifts behind '
+                 'the daily reports, distilled into a single board-ready read.',
+            go='Coming soon',
+        ))
+
+    # 3 — Briefings: live when any file exists in briefings/
+    if n_briefings:
+        cards.append(_card(
+            live=True, href='/briefings/', tag='Live',
+            title='Briefings',
+            desc='Deeper strategic analysis on the themes that matter most to boards '
+                 '- AI governance, supply chain, resilience economics.',
+            go='Read the briefings →',
+            stat=_plural(n_briefings, "briefing"),
+        ))
+    else:
+        cards.append(_card(
+            live=False, tag='Coming soon', href='',
+            title='Briefings',
+            desc='Deeper strategic analysis on the themes that matter most to boards '
+                 '- AI governance, supply chain, resilience economics.',
+            go='Coming soon',
+        ))
+
+    block = '\n\n'.join(cards)
+    start, end = '<!--PUBLICATION_CARDS:START-->', '<!--PUBLICATION_CARDS:END-->'
+    region = f'{start}\n{block}\n        {end}'
+    if start in src and end in src:
+        pre = src.split(start)[0]
+        post = src.split(end, 1)[1]
+        src = pre + region + post
+    elif '<!--PUBLICATION_CARDS-->' in src:
+        # first run: replace the one-time token with a re-writable marker region
+        src = src.replace('<!--PUBLICATION_CARDS-->', region)
+    else:
+        print("  ! PUBLICATION_CARDS marker missing in index.html — skipped")
+        return
+    idx.write_text(src, encoding='utf-8')
+    print(f"  + index.html cards: reports={n_reports} rollups={n_rollups} briefings={n_briefings}")
 
 if __name__ == '__main__':
     main()
