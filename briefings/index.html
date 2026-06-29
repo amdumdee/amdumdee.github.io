@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Briefings — Global Threat Intelligence — AmDumDee</title>
+<meta name="description" content="Deeper strategic threat intelligence briefings on the themes that matter most to boards: AI governance, supply chain, resilience economics.">
+<meta name="author" content="Am Dum Dee">
+<meta name="keywords" content="threat intelligence, cybersecurity, CISO, board governance, cyber risk, executive briefing">
+<meta property="og:title" content="Briefings — Global Threat Intelligence — AmDumDee">
+<meta property="og:description" content="Deeper strategic threat intelligence briefings on the themes that matter most to boards: AI governance, supply chain, resilience economics.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amdumdee.com">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#ffffff;--bg2:#f6f8fa;--bg3:#eceff3;
+  --txt:#16191d;--txt2:#444b54;--txt3:#8a929c;
+  --border:#e1e5ea;--acc:#b3261e;--acc-bg:#fdeceb;
+  --crit:#b3261e;--high:#c2410c;--med:#a16207;--low:#4a6;
+  --code-bg:#1e1e2e;--code-txt:#cdd6f4;
+  --serif:Georgia,'Times New Roman',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --mono:'SFMono-Regular',Consolas,'Liberation Mono',monospace;
+  --sidebar:300px;--max-prose:720px;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --bg:#121417;--bg2:#1a1d21;--bg3:#202327;
+    --txt:#e6e9ed;--txt2:#a8b0ba;--txt3:#6b7280;
+    --border:#2a2e34;--acc:#f87171;--acc-bg:#2a1514;
+    --code-bg:#0d0d16;
+  }
+}
+html,body{height:100%;background:var(--bg3);color:var(--txt);font-family:var(--sans);
+  -webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.shell{display:flex;height:100vh;overflow:hidden}
+.sidebar{width:var(--sidebar);min-width:var(--sidebar);background:var(--bg);
+  border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden}
+.main{flex:1;overflow-y:auto;background:var(--bg3)}
+
+.s-top{padding:1.2rem 1.1rem .9rem;border-bottom:1px solid var(--border);flex-shrink:0}
+.s-brand{font-size:15px;font-weight:700;color:var(--txt);letter-spacing:-.01em}
+.s-tag{font-size:11px;color:var(--txt3);margin-top:3px;line-height:1.4}
+.s-search{padding:9px 11px;border-bottom:1px solid var(--border);flex-shrink:0}
+.s-search input{width:100%;padding:7px 10px;font-size:12.5px;border:1px solid var(--border);
+  border-radius:7px;background:var(--bg2);color:var(--txt);outline:none}
+.s-search input:focus{border-color:var(--acc)}
+.s-scroll{flex:1;overflow-y:auto;padding:6px 0}
+.s-foot{padding:.7rem 1.1rem;border-top:1px solid var(--border);flex-shrink:0;
+  display:flex;flex-direction:column;gap:5px}
+.s-foot a{font-size:11px;color:var(--txt3)}
+
+.nav-sec{padding:.5rem 1.1rem .25rem;font-size:10px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.07em;color:var(--txt3)}
+.nav-item{width:100%;padding:.5rem 1.1rem;font-size:12.5px;color:var(--txt2);
+  background:none;border:none;border-left:2px solid transparent;cursor:pointer;
+  text-align:left;line-height:1.4;display:block}
+.nav-item:hover{background:var(--bg2);color:var(--txt)}
+.nav-item.active{border-left-color:var(--acc);color:var(--acc);background:var(--acc-bg)}
+.nav-date{font-size:10px;color:var(--txt3);margin-bottom:1px}
+.nav-item.active .nav-date{color:var(--acc)}
+.nav-roll{font-weight:600}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;
+  vertical-align:middle}
+.dot.critical{background:var(--crit)}.dot.high{background:var(--high)}
+.dot.medium{background:var(--med)}.dot.low{background:var(--low)}
+
+#rbar{height:2px;background:var(--acc);position:fixed;top:0;left:var(--sidebar);
+  z-index:100;pointer-events:none;transition:width .15s}
+
+.c-outer{max-width:calc(var(--max-prose) + 4rem);margin:0 auto;padding:2.5rem 2.2rem 8rem}
+
+.rep-header{margin-bottom:1.8rem;padding-bottom:1.4rem;border-bottom:1px solid var(--border)}
+.badge{display:inline-block;font-size:11px;color:var(--txt3);font-weight:600;
+  text-transform:uppercase;letter-spacing:.05em;margin-bottom:.6rem;font-family:var(--sans)}
+.rollup-badge{color:var(--acc)}
+h1{font-family:var(--serif);font-size:2.05rem;font-weight:400;line-height:1.18;
+  color:var(--txt);letter-spacing:-.015em}
+.rid{font-family:var(--mono);font-size:11px;color:var(--txt3);margin-top:.6rem}
+.src-link{display:inline-block;margin-top:.7rem;font-family:var(--sans);font-size:12px;
+  font-weight:600;color:var(--txt3);border:1px solid var(--border);border-radius:6px;
+  padding:4px 10px}
+.src-link:hover{color:var(--acc);border-color:var(--acc);text-decoration:none}
+
+.box{background:var(--bg2);border:1px solid var(--border);border-radius:11px;
+  padding:1.2rem 1.4rem;margin-bottom:1.8rem}
+.exec{border-left:3px solid var(--acc)}
+.box-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--txt3);margin-bottom:.7rem;font-family:var(--sans)}
+
+.sh0,.sh1{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--txt);
+  margin:2.2rem 0 .8rem;padding-top:1.4rem;border-top:1px solid var(--border)}
+.sh2{font-family:var(--sans);font-size:1.02rem;font-weight:600;color:var(--txt);
+  margin:1.6rem 0 .5rem}
+.sh3{font-family:var(--sans);font-size:.88rem;font-weight:600;color:var(--txt2);
+  margin:1.2rem 0 .4rem;text-transform:uppercase;letter-spacing:.04em}
+.prose{font-family:var(--serif);font-size:17px;line-height:1.8;color:var(--txt);
+  margin-bottom:1.1rem;white-space:pre-wrap;word-break:break-word}
+.box .prose:last-child{margin-bottom:0}
+.code{background:var(--code-bg);color:var(--code-txt);font-family:var(--mono);
+  font-size:13px;line-height:1.6;padding:1.1rem 1.3rem;border-radius:8px;
+  overflow-x:auto;margin:1rem 0 1.5rem;white-space:pre}
+.blist{margin:0 0 1.2rem 1.3rem}
+.blist li{font-family:var(--sans);font-size:15px;line-height:1.65;color:var(--txt2);
+  padding:.22rem 0}
+.kv{display:flex;flex-direction:column;gap:2px;padding:.6rem .9rem;margin:.5rem 0;
+  background:var(--bg2);border:1px solid var(--border);border-radius:8px}
+.kv-k{font-family:var(--sans);font-size:13.5px;font-weight:600;color:var(--txt)}
+.kv-v{font-family:var(--sans);font-size:13.5px;line-height:1.55;color:var(--txt2)}
+
+.sources{margin-top:2.5rem;padding-top:1.6rem;border-top:2px solid var(--border)}
+.src-list{list-style:none}
+.src-list li{padding:.55rem 0;border-bottom:1px solid var(--border)}
+.src-list li:last-child{border-bottom:none}
+.src-t{font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--txt)}
+.src-m{font-family:var(--sans);font-size:11.5px;color:var(--txt3);margin-top:2px}
+
+.welcome{padding:3rem 2.2rem}
+.welcome h1{font-size:2.5rem;margin-bottom:.5rem}
+.w-tag{font-family:var(--serif);font-size:1.15rem;color:var(--txt2);font-style:italic;
+  margin-bottom:2rem}
+.w-meta{font-size:13px;color:var(--txt3);display:flex;flex-wrap:wrap;gap:1rem;
+  margin-bottom:2rem;font-family:var(--sans)}
+.w-meta span+span::before{content:'·';margin-right:1rem}
+.w-body{font-family:var(--serif);font-size:16px;line-height:1.8;color:var(--txt2);
+  max-width:560px;margin-bottom:1.8rem}
+.start{display:inline-block;padding:.7rem 1.5rem;background:var(--acc);color:#fff;
+  border-radius:7px;font-size:14px;font-weight:500;cursor:pointer;border:none;
+  font-family:var(--sans)}
+
+.menu-fab{display:none;position:fixed;bottom:1rem;right:1rem;z-index:200;
+  padding:9px 15px;background:var(--bg);border:1px solid var(--border);
+  border-radius:9px;font-size:13px;color:var(--txt2);cursor:pointer;
+  box-shadow:0 2px 12px rgba(0,0,0,.18)}
+@media(max-width:768px){
+  .sidebar{position:fixed;left:0;top:0;height:100%;z-index:150;
+    transform:translateX(-110%);transition:transform .2s;width:290px}
+  .sidebar.open{transform:translateX(0)}
+  #rbar{left:0}
+  .menu-fab{display:block}
+  .c-outer{padding:1.6rem 1.1rem 6rem}
+  h1{font-size:1.6rem}
+  .prose{font-size:15.5px}
+}
+</style>
+</head>
+<body>
+<div id="rbar"></div>
+<button class="menu-fab" onclick="toggleSidebar()">☰ Briefings</button>
+<div class="shell">
+  <nav class="sidebar" id="sidebar">
+    <div class="s-top">
+      <div class="s-brand">Briefings</div>
+      <div class="s-tag">Deeper strategic analysis on the themes that matter most to boards.</div>
+    </div>
+    <div class="s-search"><input id="search" type="search" placeholder="Search briefings…"></div>
+    <div class="s-scroll" id="nav"></div>
+    <div class="s-foot">
+      <a href="/">← amdumdee.com</a>
+      <a href="https://github.com/AmDumDee/global-threat-intel" target="_blank">GitHub ↗</a>
+      <a href="https://linkedin.com/in/amdumdee" target="_blank">LinkedIn ↗</a>
+    </div>
+  </nav>
+  <main class="main" id="main">
+    <div id="content">
+      <div class="c-outer welcome">
+        <h1>Briefings</h1>
+        <p class="w-tag">The themes that matter most to boards.</p>
+        <div class="w-meta">
+          <span>0 briefings</span>
+          <span>Business-focused</span>
+          <span>Original analysis</span>
+          <span>Every source cited</span>
+        </div>
+        <p class="w-body">Deeper strategic analysis on the themes that matter most to boards - AI governance, supply chain, resilience economics. Each briefing traced to its sources.</p>
+        <button class="start" onclick="ITEMS.length&&load(ITEMS[0].id)">Read the latest →</button>
+      </div>
+    </div>
+  </main>
+</div>
+<script>
+
+const ITEMS=[];
+const DOCS={};
+const NAVLABEL="Briefings";
+let active=null;
+
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+
+function buildNav(){
+  const el=document.getElementById('nav');
+  const h2=document.createElement('div');h2.className='nav-sec';h2.textContent=NAVLABEL;el.appendChild(h2);
+  ITEMS.forEach(r=>{
+    const b=document.createElement('button');b.className='nav-item';b.dataset.id=r.id;
+    if(r.datePretty){
+      const sev=(r.sev||'').toLowerCase();
+      b.innerHTML=`<div class="nav-date">${esc(r.datePretty)}</div>`+
+        `<span class="dot ${sev}"></span>${esc(r.title)}`;
+    }else{
+      b.innerHTML=(r.label?`<div class="nav-date">${esc(r.label)}</div>`:'')+esc(r.title);
+    }
+    b.addEventListener('click',()=>{load(r.id);closeMobile();});
+    el.appendChild(b);
+  });
+}
+
+function load(id){
+  const html=DOCS[id];
+  if(!html)return;
+  document.getElementById('content').innerHTML='<div class="c-outer">'+html+'</div>';
+  document.getElementById('main').scrollTop=0;
+  if(active)active.classList.remove('active');
+  const btn=document.querySelector('.nav-item[data-id="'+CSS.escape(id)+'"]');
+  if(btn){btn.classList.add('active');active=btn;btn.scrollIntoView({block:'nearest'});}
+  document.getElementById('rbar').style.width='0';
+  location.hash=id;
+}
+
+document.getElementById('main').addEventListener('scroll',function(){
+  const pct=this.scrollTop/(this.scrollHeight-this.clientHeight)||0;
+  document.getElementById('rbar').style.width=Math.round(pct*100)+'%';
+});
+
+document.getElementById('search').addEventListener('input',function(){
+  const q=this.value.toLowerCase();
+  document.querySelectorAll('.nav-item').forEach(b=>{
+    b.style.display=!q||b.textContent.toLowerCase().includes(q)?'':'none';
+  });
+});
+
+function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');}
+function closeMobile(){if(window.innerWidth<=768)document.getElementById('sidebar').classList.remove('open');}
+
+buildNav();
+// deep link
+if(location.hash){const id=location.hash.slice(1);if(DOCS[id])load(id);}
+
+</script>
+</body>
+</html>
