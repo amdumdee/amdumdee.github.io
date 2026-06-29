@@ -40,7 +40,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           rm -rf _data
-          git add threat-intel/index.html sitemap.xml llms.txt
+          git add -A threat-intel rollups briefings sitemap.xml llms.txt index.html
           if git diff --staged --quiet; then
             echo "No changes."
           else
