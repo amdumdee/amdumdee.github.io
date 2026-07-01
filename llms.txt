@@ -9,13 +9,14 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 197 | Rollups: 5 | Briefings: 0
+Total reports: 198 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- June 30, 2026: AI Agents Become the Attack Surface: Trust Exploitation Across Agentic Tools (https://amdumdee.com/threat-intel/#2026-06-30-ai-agent-trust-collapse)
 - June 29, 2026: Critical SimpleHelp Remote-Access Flaw Actively Exploited to Deploy Stealer Malware (https://amdumdee.com/threat-intel/#2026-06-29-simplehelp-auth-bypass-stealer)
 - June 28, 2026: Third-Party Vendor Breach Exposes 14.2M Email Accounts Across Six Japanese ISPs (https://amdumdee.com/threat-intel/#2026-06-28-kddi-third-party-email-breach-14m-accoun)
 - June 27, 2026: Trusted-Channel Exploitation: AI Coding Agents, Messaging Recovery Keys, and Verified Email Infrastructure Weaponized Against Enterprises (https://amdumdee.com/threat-intel/#2026-06-27-ai-agent-exploitation-and-trusted-channe)
@@ -30,4 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - June 18, 2026: Weekly Threat Brief: Critical Edge RCE, Vendor-Chain Breach, and Cloud-Trusted C2 Abuse (https://amdumdee.com/threat-intel/#2026-06-18-nginx-rce-vendor-breach-teams-c2)
 - June 17, 2026: The Trust Economy Is Compromised: Fake Reputation Networks, Mobile Takeover, and Regulatory Exposure Converge (https://amdumdee.com/threat-intel/#2026-06-17-trust-infrastructure-under-attack)
 - June 16, 2026: Converged Trust Platform Abuse: SaaS, Cloud AI, and Identity Layers Weaponized (https://amdumdee.com/threat-intel/#2026-06-16-converged-trust-platform-abuse)
-- June 15, 2026: Active Exploitation of Check Point VPN Zero-Day by Qilin Ransomware Affiliate (https://amdumdee.com/threat-intel/#2026-06-15-checkpoint-vpn-zeroday-qilin-ransomware)
