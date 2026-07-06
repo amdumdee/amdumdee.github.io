@@ -9,13 +9,14 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 201 | Rollups: 5 | Briefings: 0
+Total reports: 202 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- July 5, 2026: ShinyHunters Breaches Medtronic (3.8M Records) as Attackers Actively Exploit SimpleHelp RMM and Oracle EBS Payments (https://amdumdee.com/threat-intel/#2026-07-05-shinyhunters-medtronic-enterprise-exploi)
 - July 3, 2026: Shadow AI Opens the Supply Chain Door: Developer Environments Under Coordinated Attack (https://amdumdee.com/threat-intel/#2026-07-03-shadow-ai-supply-chain-developer-targeti)
 - July 2, 2026: FBI Seizes NetNut Proxy Network While Ransomware Groups Industrialize Attack Infrastructure (https://amdumdee.com/threat-intel/#2026-07-02-residential-proxy-ransomware-infrastruct)
 - July 1, 2026: Enterprise Platform Exploitation Surge: SharePoint, Oracle, and Network Infrastructure Under Simultaneous Attack (https://amdumdee.com/threat-intel/#2026-07-01-enterprise-platform-exploitation-surge)
@@ -30,4 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - June 22, 2026: AI Attack Surface Week: Mass Credential Leakage, Cross-Tenant AI Data Exposure, and Frontier Model Geopolitical Shutdown (https://amdumdee.com/threat-intel/#2026-06-22-ai-credential-leakage-dify-tenant-breach)
 - June 21, 2026: Week of June 21: 74K Stolen Firewall Credentials, AI-Powered Low-Skill Breaches, and Active Exploitation of Security Monitoring Tools (https://amdumdee.com/threat-intel/#2026-06-21-fortinet-credentials-ai-attacks-splunk-r)
 - June 20, 2026: Triple Threat Week: Industrial Credential Factories, EDR Bypass Kits, and Mass API Key Exposure (https://amdumdee.com/threat-intel/#2026-06-20-industrial-scale-credential-attacks-edr-)
-- June 19, 2026: Klue OAuth Token Theft — Salesforce Supply-Chain Extortion Campaign (https://amdumdee.com/threat-intel/#2026-06-19-klue-oauth-saas-supply-chain-breach)
