@@ -9,13 +9,14 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 203 | Rollups: 5 | Briefings: 0
+Total reports: 204 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- July 7, 2026: Accenture Confirms Breach as Vendor and Supply-Chain Risk Compounds Industry-Wide (https://amdumdee.com/threat-intel/#2026-07-07-accenture-breach-third-party-risk)
 - July 6, 2026: 2026-07-06-coldfusion-max-severity-active-exploitation (https://amdumdee.com/threat-intel/#2026-07-06-coldfusion-max-severity-active-exploitat)
 - July 5, 2026: ShinyHunters Breaches Medtronic (3.8M Records) as Attackers Actively Exploit SimpleHelp RMM and Oracle EBS Payments (https://amdumdee.com/threat-intel/#2026-07-05-shinyhunters-medtronic-enterprise-exploi)
 - July 3, 2026: Shadow AI Opens the Supply Chain Door: Developer Environments Under Coordinated Attack (https://amdumdee.com/threat-intel/#2026-07-03-shadow-ai-supply-chain-developer-targeti)
@@ -30,4 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - June 24, 2026: Software Supply Chain Under Siege: CI/CD Hijacking Hits Microsoft, Google, and 300+ Repositories (https://amdumdee.com/threat-intel/#2026-06-24-supply-chain-cicd-critical-exploit-wave)
 - June 23, 2026: AI Trust Collapse: Fake Skills Pass All Scanners, AI Research Manipulated by Forum Comments, Tata IP Breach Exposes Apple Supply Chain (https://amdumdee.com/threat-intel/#2026-06-23-ai-agent-skill-poisoning-tata-breach-ai-)
 - June 22, 2026: AI Attack Surface Week: Mass Credential Leakage, Cross-Tenant AI Data Exposure, and Frontier Model Geopolitical Shutdown (https://amdumdee.com/threat-intel/#2026-06-22-ai-credential-leakage-dify-tenant-breach)
-- June 21, 2026: Week of June 21: 74K Stolen Firewall Credentials, AI-Powered Low-Skill Breaches, and Active Exploitation of Security Monitoring Tools (https://amdumdee.com/threat-intel/#2026-06-21-fortinet-credentials-ai-attacks-splunk-r)
