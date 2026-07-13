@@ -9,13 +9,15 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 206 | Rollups: 5 | Briefings: 0
+Total reports: 208 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- July 12, 2026: Critical Joomla Extension Flaw Under Active Exploitation — Federal Deadline Tomorrow (https://amdumdee.com/threat-intel/#2026-07-12-icagenda-kev-critical-joomla-rce)
+- July 11, 2026: Automated Trust Under Fire: AI Coding Agents and CMS Platforms Both Weaponized at Scale (https://amdumdee.com/threat-intel/#2026-07-11-automated-trust-ai-agents-cms-exploitati)
 - July 9, 2026: Legitimacy as Attack Surface: Dormant Accounts, Insider Access, and Global Fraud Enforcement (https://amdumdee.com/threat-intel/#2026-07-09-dormant-access-and-legitimacy-exploitati)
 - July 8, 2026: 2026-07-08-kddi-breach-12-million-records (https://amdumdee.com/threat-intel/#2026-07-08-kddi-breach-12-million-records)
 - July 7, 2026: Accenture Confirms Breach as Vendor and Supply-Chain Risk Compounds Industry-Wide (https://amdumdee.com/threat-intel/#2026-07-07-accenture-breach-third-party-risk)
@@ -29,5 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - June 28, 2026: Third-Party Vendor Breach Exposes 14.2M Email Accounts Across Six Japanese ISPs (https://amdumdee.com/threat-intel/#2026-06-28-kddi-third-party-email-breach-14m-accoun)
 - June 27, 2026: Trusted-Channel Exploitation: AI Coding Agents, Messaging Recovery Keys, and Verified Email Infrastructure Weaponized Against Enterprises (https://amdumdee.com/threat-intel/#2026-06-27-ai-agent-exploitation-and-trusted-channe)
 - June 26, 2026: Social Engineering Scales Up: Signal Takeovers, Fake AI Workspaces, and Government Network Infiltration on a Single Day (https://amdumdee.com/threat-intel/#2026-06-26-social-engineering-ai-platforms-signal-e)
-- June 25, 2026: Browser Extension Supply Chain Risk & AI Security Advice Gaps: Dual Enterprise Blind Spots (https://amdumdee.com/threat-intel/#2026-06-25-browser-extension-supply-chain-ai-securi)
-- June 24, 2026: Software Supply Chain Under Siege: CI/CD Hijacking Hits Microsoft, Google, and 300+ Repositories (https://amdumdee.com/threat-intel/#2026-06-24-supply-chain-cicd-critical-exploit-wave)
