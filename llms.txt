@@ -9,16 +9,19 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 209 | Rollups: 5 | Briefings: 0
+Total reports: 212 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- July 15, 2026: AsyncAPI Supply Chain Breach Exposes the Limits of Perimeter Trust in Open Source (https://amdumdee.com/threat-intel/#2026-07-15-asyncapi-supply-chain-ai-acceleration)
+- July 14, 2026: Microsoft's Record 570-Flaw Patch Tuesday Signals a Structural Shift in Attack Speed (https://amdumdee.com/threat-intel/#2026-07-14-record-patch-tuesday-ai-discovery)
 - July 13, 2026: Six-Month Credential Leak at CISA Exposes the Gap Between Policy and Practice (https://amdumdee.com/threat-intel/#2026-07-13-cisa-secrets-exposure-postmortem)
 - July 12, 2026: Critical Joomla Extension Flaw Under Active Exploitation — Federal Deadline Tomorrow (https://amdumdee.com/threat-intel/#2026-07-12-icagenda-kev-critical-joomla-rce)
 - July 11, 2026: Automated Trust Under Fire: AI Coding Agents and CMS Platforms Both Weaponized at Scale (https://amdumdee.com/threat-intel/#2026-07-11-automated-trust-ai-agents-cms-exploitati)
+- July 10, 2026: Trusted Vendors, Untrusted Code: Supply Chain and Infrastructure Compromise Accelerates (https://amdumdee.com/threat-intel/#2026-07-10-trusted-vendor-supply-chain-compromise)
 - July 9, 2026: Legitimacy as Attack Surface: Dormant Accounts, Insider Access, and Global Fraud Enforcement (https://amdumdee.com/threat-intel/#2026-07-09-dormant-access-and-legitimacy-exploitati)
 - July 8, 2026: 2026-07-08-kddi-breach-12-million-records (https://amdumdee.com/threat-intel/#2026-07-08-kddi-breach-12-million-records)
 - July 7, 2026: Accenture Confirms Breach as Vendor and Supply-Chain Risk Compounds Industry-Wide (https://amdumdee.com/threat-intel/#2026-07-07-accenture-breach-third-party-risk)
@@ -28,6 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - July 2, 2026: FBI Seizes NetNut Proxy Network While Ransomware Groups Industrialize Attack Infrastructure (https://amdumdee.com/threat-intel/#2026-07-02-residential-proxy-ransomware-infrastruct)
 - July 1, 2026: Enterprise Platform Exploitation Surge: SharePoint, Oracle, and Network Infrastructure Under Simultaneous Attack (https://amdumdee.com/threat-intel/#2026-07-01-enterprise-platform-exploitation-surge)
 - June 30, 2026: AI Agents Become the Attack Surface: Trust Exploitation Across Agentic Tools (https://amdumdee.com/threat-intel/#2026-06-30-ai-agent-trust-collapse)
-- June 29, 2026: Critical SimpleHelp Remote-Access Flaw Actively Exploited to Deploy Stealer Malware (https://amdumdee.com/threat-intel/#2026-06-29-simplehelp-auth-bypass-stealer)
-- June 28, 2026: Third-Party Vendor Breach Exposes 14.2M Email Accounts Across Six Japanese ISPs (https://amdumdee.com/threat-intel/#2026-06-28-kddi-third-party-email-breach-14m-accoun)
-- June 27, 2026: Trusted-Channel Exploitation: AI Coding Agents, Messaging Recovery Keys, and Verified Email Infrastructure Weaponized Against Enterprises (https://amdumdee.com/threat-intel/#2026-06-27-ai-agent-exploitation-and-trusted-channe)
