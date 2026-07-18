@@ -9,13 +9,15 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 212 | Rollups: 5 | Briefings: 0
+Total reports: 214 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- July 17, 2026: Pre-Auth Flaws in Web/Encryption Infrastructure Plus a Live Supply Chain Breach (https://amdumdee.com/threat-intel/#2026-07-17-preauth-infra-flaws-and-nichirei-breach)
+- July 16, 2026: TfL Hacker Sentencing Exposes the Real Variable Between Contained and Catastrophic (https://amdumdee.com/threat-intel/#2026-07-16-tfl-sentencing-decisive-containment)
 - July 15, 2026: AsyncAPI Supply Chain Breach Exposes the Limits of Perimeter Trust in Open Source (https://amdumdee.com/threat-intel/#2026-07-15-asyncapi-supply-chain-ai-acceleration)
 - July 14, 2026: Microsoft's Record 570-Flaw Patch Tuesday Signals a Structural Shift in Attack Speed (https://amdumdee.com/threat-intel/#2026-07-14-record-patch-tuesday-ai-discovery)
 - July 13, 2026: Six-Month Credential Leak at CISA Exposes the Gap Between Policy and Practice (https://amdumdee.com/threat-intel/#2026-07-13-cisa-secrets-exposure-postmortem)
@@ -29,5 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - July 5, 2026: ShinyHunters Breaches Medtronic (3.8M Records) as Attackers Actively Exploit SimpleHelp RMM and Oracle EBS Payments (https://amdumdee.com/threat-intel/#2026-07-05-shinyhunters-medtronic-enterprise-exploi)
 - July 3, 2026: Shadow AI Opens the Supply Chain Door: Developer Environments Under Coordinated Attack (https://amdumdee.com/threat-intel/#2026-07-03-shadow-ai-supply-chain-developer-targeti)
 - July 2, 2026: FBI Seizes NetNut Proxy Network While Ransomware Groups Industrialize Attack Infrastructure (https://amdumdee.com/threat-intel/#2026-07-02-residential-proxy-ransomware-infrastruct)
-- July 1, 2026: Enterprise Platform Exploitation Surge: SharePoint, Oracle, and Network Infrastructure Under Simultaneous Attack (https://amdumdee.com/threat-intel/#2026-07-01-enterprise-platform-exploitation-surge)
-- June 30, 2026: AI Agents Become the Attack Surface: Trust Exploitation Across Agentic Tools (https://amdumdee.com/threat-intel/#2026-06-30-ai-agent-trust-collapse)
