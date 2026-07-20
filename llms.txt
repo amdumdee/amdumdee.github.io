@@ -9,13 +9,15 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 214 | Rollups: 5 | Briefings: 0
+Total reports: 216 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- July 19, 2026: Remote-Access Infrastructure Under Silent Siege: SonicWall Zero-Days, WordPress RCE, Update-Chain Abuse (https://amdumdee.com/threat-intel/#2026-07-19-sonicwall-zeroday-supplychain-trust-gap)
+- July 18, 2026: Coordinated Patch-Critical Window: 7-Zip, OpenSSL, WordPress, FortiSandbox (https://amdumdee.com/threat-intel/#2026-07-18-critical-infra-patch-wave-july2026)
 - July 17, 2026: Pre-Auth Flaws in Web/Encryption Infrastructure Plus a Live Supply Chain Breach (https://amdumdee.com/threat-intel/#2026-07-17-preauth-infra-flaws-and-nichirei-breach)
 - July 16, 2026: TfL Hacker Sentencing Exposes the Real Variable Between Contained and Catastrophic (https://amdumdee.com/threat-intel/#2026-07-16-tfl-sentencing-decisive-containment)
 - July 15, 2026: AsyncAPI Supply Chain Breach Exposes the Limits of Perimeter Trust in Open Source (https://amdumdee.com/threat-intel/#2026-07-15-asyncapi-supply-chain-ai-acceleration)
@@ -29,5 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - July 7, 2026: Accenture Confirms Breach as Vendor and Supply-Chain Risk Compounds Industry-Wide (https://amdumdee.com/threat-intel/#2026-07-07-accenture-breach-third-party-risk)
 - July 6, 2026: 2026-07-06-coldfusion-max-severity-active-exploitation (https://amdumdee.com/threat-intel/#2026-07-06-coldfusion-max-severity-active-exploitat)
 - July 5, 2026: ShinyHunters Breaches Medtronic (3.8M Records) as Attackers Actively Exploit SimpleHelp RMM and Oracle EBS Payments (https://amdumdee.com/threat-intel/#2026-07-05-shinyhunters-medtronic-enterprise-exploi)
-- July 3, 2026: Shadow AI Opens the Supply Chain Door: Developer Environments Under Coordinated Attack (https://amdumdee.com/threat-intel/#2026-07-03-shadow-ai-supply-chain-developer-targeti)
-- July 2, 2026: FBI Seizes NetNut Proxy Network While Ransomware Groups Industrialize Attack Infrastructure (https://amdumdee.com/threat-intel/#2026-07-02-residential-proxy-ransomware-infrastruct)
