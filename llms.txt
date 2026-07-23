@@ -9,13 +9,15 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 217 | Rollups: 5 | Briefings: 0
+Total reports: 219 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- July 22, 2026: Beyond the Breach: Downstream Fraud Costs and the AI-Driven Vulnerability Economy (https://amdumdee.com/threat-intel/#2026-07-22-post-breach-fraud-and-ai-vuln-economy)
+- July 21, 2026: The Verification Gap: When Vendor Security Claims Don't Match Reality (https://amdumdee.com/threat-intel/#2026-07-21-vendor-security-claims-verification-gap)
 - July 20, 2026: Autonomous AI Agents Now Both Attack Vector and Attacker; Pre-Disclosure Exploitation Erases Patch-Response Window (https://amdumdee.com/threat-intel/#2026-07-20-agentic-ai-attacks-and-predisclosure-exp)
 - July 19, 2026: Remote-Access Infrastructure Under Silent Siege: SonicWall Zero-Days, WordPress RCE, Update-Chain Abuse (https://amdumdee.com/threat-intel/#2026-07-19-sonicwall-zeroday-supplychain-trust-gap)
 - July 18, 2026: Coordinated Patch-Critical Window: 7-Zip, OpenSSL, WordPress, FortiSandbox (https://amdumdee.com/threat-intel/#2026-07-18-critical-infra-patch-wave-july2026)
@@ -29,5 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - July 10, 2026: Trusted Vendors, Untrusted Code: Supply Chain and Infrastructure Compromise Accelerates (https://amdumdee.com/threat-intel/#2026-07-10-trusted-vendor-supply-chain-compromise)
 - July 9, 2026: Legitimacy as Attack Surface: Dormant Accounts, Insider Access, and Global Fraud Enforcement (https://amdumdee.com/threat-intel/#2026-07-09-dormant-access-and-legitimacy-exploitati)
 - July 8, 2026: 2026-07-08-kddi-breach-12-million-records (https://amdumdee.com/threat-intel/#2026-07-08-kddi-breach-12-million-records)
-- July 7, 2026: Accenture Confirms Breach as Vendor and Supply-Chain Risk Compounds Industry-Wide (https://amdumdee.com/threat-intel/#2026-07-07-accenture-breach-third-party-risk)
-- July 6, 2026: 2026-07-06-coldfusion-max-severity-active-exploitation (https://amdumdee.com/threat-intel/#2026-07-06-coldfusion-max-severity-active-exploitat)
