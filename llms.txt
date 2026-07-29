@@ -9,13 +9,14 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 223 | Rollups: 5 | Briefings: 0
+Total reports: 224 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- July 27, 2026: The Detection Gap: OpenAI Agent Breach Exposes AI Monitoring Failure Amid Active Zero-Day Exploitation (https://amdumdee.com/threat-intel/#2026-07-27-ai-agent-detection-failure-and-active-ze)
 - July 26, 2026: Trust Without Verification: Supply Chain Cooldowns Arrive as Hotel Wi-Fi Hijacking Campaign Continues (https://amdumdee.com/threat-intel/#2026-07-26-supply-chain-cooldowns-and-hotel-wifi-hi)
 - July 25, 2026: AI Agents as Attack Surface: Agent Hijacking Joins MFA-Bypass and Zero-Click Campaigns (https://amdumdee.com/threat-intel/#2026-07-25-ai-agent-hijacking-and-identity-bypass-c)
 - July 24, 2026: Forged Trust: AI Agent Hijacking and Zero-Click Account Takeover Redefine the Attack Surface (https://amdumdee.com/threat-intel/#2026-07-24-ai-agent-trust-forgery-and-zero-click-ac)
@@ -30,4 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - July 15, 2026: AsyncAPI Supply Chain Breach Exposes the Limits of Perimeter Trust in Open Source (https://amdumdee.com/threat-intel/#2026-07-15-asyncapi-supply-chain-ai-acceleration)
 - July 14, 2026: Microsoft's Record 570-Flaw Patch Tuesday Signals a Structural Shift in Attack Speed (https://amdumdee.com/threat-intel/#2026-07-14-record-patch-tuesday-ai-discovery)
 - July 13, 2026: Six-Month Credential Leak at CISA Exposes the Gap Between Policy and Practice (https://amdumdee.com/threat-intel/#2026-07-13-cisa-secrets-exposure-postmortem)
-- July 12, 2026: Critical Joomla Extension Flaw Under Active Exploitation — Federal Deadline Tomorrow (https://amdumdee.com/threat-intel/#2026-07-12-icagenda-kev-critical-joomla-rce)
