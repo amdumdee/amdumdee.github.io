@@ -9,13 +9,17 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 229 | Rollups: 5 | Briefings: 0
+Total reports: 233 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- August 4, 2026: CISA Confirms N-central Exploitation Active in the Wild; Liechtenstein Beneficial-Ownership Registry Breached (https://amdumdee.com/threat-intel/#2026-08-04-cisa-kev-ncentral-and-liechtenstein-regi)
+- August 3, 2026: Active Exploitation of N-able N-central RMM Puts MSP Client Networks at Risk (https://amdumdee.com/threat-intel/#2026-08-03-ncentral-rmm-exploitation-and-supply-cha)
+- August 2, 2026: Healthcare Breach Disclosure Delays and the Rise of Trusted-Platform Malware Distribution (https://amdumdee.com/threat-intel/#2026-08-02-healthcare-breach-disclosure-lag-and-mes)
+- August 1, 2026: Shared Infrastructure Trust Collapse: Ad-Tech, Frameworks, Firewalls, and Travel Networks Compromised in Parallel (https://amdumdee.com/threat-intel/#2026-08-01-shared-infrastructure-trust-collapse)
 - July 31, 2026: Autonomous AI Attack Agents: From Proof-of-Concept to Operational Reality (https://amdumdee.com/threat-intel/#2026-07-31-autonomous-ai-cyberattacks-emerging-risk)
 - July 30, 2026: Consumer Streaming Sticks Weaponized for Large-Scale Ad Fraud and Residential Proxy Abuse (https://amdumdee.com/threat-intel/#2026-07-30-h96-streaming-stick-ad-fraud-network)
 - July 30, 2026: Identity Infrastructure Replaces Malware as Primary Attack Vector (https://amdumdee.com/threat-intel/#2026-07-30-identity-as-perimeter-oauth-sso-abuse)
@@ -27,7 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - July 24, 2026: Forged Trust: AI Agent Hijacking and Zero-Click Account Takeover Redefine the Attack Surface (https://amdumdee.com/threat-intel/#2026-07-24-ai-agent-trust-forgery-and-zero-click-ac)
 - July 23, 2026: Borrowed Trust: Attackers Weaponize Legitimate Platforms While Shadow AI Expands Unmonitored Risk (https://amdumdee.com/threat-intel/#2026-07-23-trusted-platform-abuse-and-shadow-ai-exp)
 - July 22, 2026: Beyond the Breach: Downstream Fraud Costs and the AI-Driven Vulnerability Economy (https://amdumdee.com/threat-intel/#2026-07-22-post-breach-fraud-and-ai-vuln-economy)
-- July 21, 2026: The Verification Gap: When Vendor Security Claims Don't Match Reality (https://amdumdee.com/threat-intel/#2026-07-21-vendor-security-claims-verification-gap)
-- July 20, 2026: Autonomous AI Agents Now Both Attack Vector and Attacker; Pre-Disclosure Exploitation Erases Patch-Response Window (https://amdumdee.com/threat-intel/#2026-07-20-agentic-ai-attacks-and-predisclosure-exp)
-- July 19, 2026: Remote-Access Infrastructure Under Silent Siege: SonicWall Zero-Days, WordPress RCE, Update-Chain Abuse (https://amdumdee.com/threat-intel/#2026-07-19-sonicwall-zeroday-supplychain-trust-gap)
-- July 18, 2026: Coordinated Patch-Critical Window: 7-Zip, OpenSSL, WordPress, FortiSandbox (https://amdumdee.com/threat-intel/#2026-07-18-critical-infra-patch-wave-july2026)
