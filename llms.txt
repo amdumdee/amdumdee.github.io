@@ -9,13 +9,14 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 234 | Rollups: 5 | Briefings: 0
+Total reports: 235 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- August 6, 2026: Ill Bloom: A 12-Year-Old Crypto Library Flaw Is Draining Wallets, and It's Part of a Bigger Entropy Problem (https://amdumdee.com/threat-intel/#2026-08-06-cryptojs-ill-bloom-wallet-drains)
 - August 5, 2026: Agentic AI Systems Are Now Both the Attacker and the Attack Surface (https://amdumdee.com/threat-intel/#2026-08-05-agentic-ai-attack-surface)
 - August 4, 2026: CISA Confirms N-central Exploitation Active in the Wild; Liechtenstein Beneficial-Ownership Registry Breached (https://amdumdee.com/threat-intel/#2026-08-04-cisa-kev-ncentral-and-liechtenstein-regi)
 - August 3, 2026: Active Exploitation of N-able N-central RMM Puts MSP Client Networks at Risk (https://amdumdee.com/threat-intel/#2026-08-03-ncentral-rmm-exploitation-and-supply-cha)
@@ -30,4 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - July 26, 2026: Trust Without Verification: Supply Chain Cooldowns Arrive as Hotel Wi-Fi Hijacking Campaign Continues (https://amdumdee.com/threat-intel/#2026-07-26-supply-chain-cooldowns-and-hotel-wifi-hi)
 - July 25, 2026: AI Agents as Attack Surface: Agent Hijacking Joins MFA-Bypass and Zero-Click Campaigns (https://amdumdee.com/threat-intel/#2026-07-25-ai-agent-hijacking-and-identity-bypass-c)
 - July 24, 2026: Forged Trust: AI Agent Hijacking and Zero-Click Account Takeover Redefine the Attack Surface (https://amdumdee.com/threat-intel/#2026-07-24-ai-agent-trust-forgery-and-zero-click-ac)
-- July 23, 2026: Borrowed Trust: Attackers Weaponize Legitimate Platforms While Shadow AI Expands Unmonitored Risk (https://amdumdee.com/threat-intel/#2026-07-23-trusted-platform-abuse-and-shadow-ai-exp)
