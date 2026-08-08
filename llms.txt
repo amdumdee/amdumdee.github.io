@@ -9,13 +9,14 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 235 | Rollups: 5 | Briefings: 0
+Total reports: 236 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- August 7, 2026: AI Coding-Agent Supply Chain Exposure: CI Secrets Reachable via Unprivileged GitHub Issues (https://amdumdee.com/threat-intel/#2026-08-07-ai-coding-agent-ci-secrets-exposure)
 - August 6, 2026: Ill Bloom: A 12-Year-Old Crypto Library Flaw Is Draining Wallets, and It's Part of a Bigger Entropy Problem (https://amdumdee.com/threat-intel/#2026-08-06-cryptojs-ill-bloom-wallet-drains)
 - August 5, 2026: Agentic AI Systems Are Now Both the Attacker and the Attack Surface (https://amdumdee.com/threat-intel/#2026-08-05-agentic-ai-attack-surface)
 - August 4, 2026: CISA Confirms N-central Exploitation Active in the Wild; Liechtenstein Beneficial-Ownership Registry Breached (https://amdumdee.com/threat-intel/#2026-08-04-cisa-kev-ncentral-and-liechtenstein-regi)
@@ -30,4 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - July 27, 2026: The Detection Gap: OpenAI Agent Breach Exposes AI Monitoring Failure Amid Active Zero-Day Exploitation (https://amdumdee.com/threat-intel/#2026-07-27-ai-agent-detection-failure-and-active-ze)
 - July 26, 2026: Trust Without Verification: Supply Chain Cooldowns Arrive as Hotel Wi-Fi Hijacking Campaign Continues (https://amdumdee.com/threat-intel/#2026-07-26-supply-chain-cooldowns-and-hotel-wifi-hi)
 - July 25, 2026: AI Agents as Attack Surface: Agent Hijacking Joins MFA-Bypass and Zero-Click Campaigns (https://amdumdee.com/threat-intel/#2026-07-25-ai-agent-hijacking-and-identity-bypass-c)
-- July 24, 2026: Forged Trust: AI Agent Hijacking and Zero-Click Account Takeover Redefine the Attack Surface (https://amdumdee.com/threat-intel/#2026-07-24-ai-agent-trust-forgery-and-zero-click-ac)
