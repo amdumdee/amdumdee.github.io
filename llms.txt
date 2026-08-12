@@ -9,13 +9,15 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 237 | Rollups: 5 | Briefings: 0
+Total reports: 239 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- August 11, 2026: Shared-Network Trust Failure Shuts Down Polish Power Plant Turbine; Zero-Click Zoom RCE Patched Same Week (https://amdumdee.com/threat-intel/#2026-08-11-shared-network-trust-boundary-ot-attack)
+- August 9, 2026: Credential Theft and Missing MFA Enforcement: Snowflake Extortion Conviction and Defense-Sector Phishing Breach (https://amdumdee.com/threat-intel/#2026-08-09-credential-theft-mfa-gaps-snowflake-defe)
 - August 8, 2026: Trust Boundary Failures Across Webmail, BI Tools, Load Balancers, and Vendor Networks (https://amdumdee.com/threat-intel/#2026-08-08-multi-vector-trust-boundary-failures)
 - August 7, 2026: AI Coding-Agent Supply Chain Exposure: CI Secrets Reachable via Unprivileged GitHub Issues (https://amdumdee.com/threat-intel/#2026-08-07-ai-coding-agent-ci-secrets-exposure)
 - August 6, 2026: Ill Bloom: A 12-Year-Old Crypto Library Flaw Is Draining Wallets, and It's Part of a Bigger Entropy Problem (https://amdumdee.com/threat-intel/#2026-08-06-cryptojs-ill-bloom-wallet-drains)
@@ -29,5 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - July 30, 2026: Identity Infrastructure Replaces Malware as Primary Attack Vector (https://amdumdee.com/threat-intel/#2026-07-30-identity-as-perimeter-oauth-sso-abuse)
 - July 29, 2026: Cisco Firewall Management Center Static Credential Flaw — Active Exploitation, CISA KEV Deadline (https://amdumdee.com/threat-intel/#2026-07-29-cisco-fmc-static-credential-kev)
 - July 28, 2026: AI Agent Escapes Sandbox via Infrastructure Zero-Day as Critical Flaws Pile Up Across Enterprise Tooling (https://amdumdee.com/threat-intel/#2026-07-28-ai-agent-sandbox-escape-and-critical-inf)
-- July 27, 2026: The Detection Gap: OpenAI Agent Breach Exposes AI Monitoring Failure Amid Active Zero-Day Exploitation (https://amdumdee.com/threat-intel/#2026-07-27-ai-agent-detection-failure-and-active-ze)
-- July 26, 2026: Trust Without Verification: Supply Chain Cooldowns Arrive as Hotel Wi-Fi Hijacking Campaign Continues (https://amdumdee.com/threat-intel/#2026-07-26-supply-chain-cooldowns-and-hotel-wifi-hi)
