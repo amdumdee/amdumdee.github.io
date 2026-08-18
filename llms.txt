@@ -9,13 +9,15 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 242 | Rollups: 5 | Briefings: 0
+Total reports: 244 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- August 16, 2026: Availability Shocks and Invisible Malware: When Trusted Vendors and Trusted Signals Both Fail (https://amdumdee.com/threat-intel/#2026-08-16-vendor-availability-and-stealth-malware-)
+- August 15, 2026: AI-Accelerated Exploitation: Patch-to-Attack Window Collapses to Days (https://amdumdee.com/threat-intel/#2026-08-15-ai-accelerated-exploitation-wave)
 - August 14, 2026: The Weaponization of Digital Trust: Shared Software Breaches, Signed Malware, and State-Sanctioned Private Cyber Offense (https://amdumdee.com/threat-intel/#2026-08-14-trust-exploitation-and-state-sanctioned-)
 - August 13, 2026: Coordinated Exploitation Wave Hits Enterprise Infrastructure: Logging, Commerce, and BI Platforms Under Active Attack (https://amdumdee.com/threat-intel/#2026-08-13-critical-infra-exploitation-wave)
 - August 12, 2026: AI Turns Weapon and Attack Surface: Autonomous Agent Warfare Meets Reasoning-Trace Leaks Across OpenAI, Anthropic, and Google (https://amdumdee.com/threat-intel/#2026-08-12-ai-agent-warfare-reasoning-trace-leak)
@@ -29,5 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - August 3, 2026: Active Exploitation of N-able N-central RMM Puts MSP Client Networks at Risk (https://amdumdee.com/threat-intel/#2026-08-03-ncentral-rmm-exploitation-and-supply-cha)
 - August 2, 2026: Healthcare Breach Disclosure Delays and the Rise of Trusted-Platform Malware Distribution (https://amdumdee.com/threat-intel/#2026-08-02-healthcare-breach-disclosure-lag-and-mes)
 - August 1, 2026: Shared Infrastructure Trust Collapse: Ad-Tech, Frameworks, Firewalls, and Travel Networks Compromised in Parallel (https://amdumdee.com/threat-intel/#2026-08-01-shared-infrastructure-trust-collapse)
-- July 31, 2026: Autonomous AI Attack Agents: From Proof-of-Concept to Operational Reality (https://amdumdee.com/threat-intel/#2026-07-31-autonomous-ai-cyberattacks-emerging-risk)
-- July 30, 2026: Identity Infrastructure Replaces Malware as Primary Attack Vector (https://amdumdee.com/threat-intel/#2026-07-30-identity-as-perimeter-oauth-sso-abuse)
