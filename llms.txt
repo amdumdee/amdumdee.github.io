@@ -9,13 +9,17 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 244 | Rollups: 5 | Briefings: 0
+Total reports: 248 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- August 20, 2026: Three Fronts, One Pattern: Attackers Are Industrializing Access to Money, Credentials, and Code (https://amdumdee.com/threat-intel/#2026-08-20-mobile-banking-browser-supply-chain-conv)
+- August 19, 2026: The Isolation Boundaries Businesses Rely On Are Being Tested — From Cloud Runtimes to AI Labs Themselves (https://amdumdee.com/threat-intel/#2026-08-19-shared-infrastructure-isolation-failures)
+- August 18, 2026: Attackers Are Weaponizing the Platforms You Already Trust — Not Breaking Into New Ones (https://amdumdee.com/threat-intel/#2026-08-18-trusted-platform-c2-and-guest-identity-e)
+- August 17, 2026: Wave of Unauthenticated Critical Flaws Meets Faster Nation-State Exploitation (https://amdumdee.com/threat-intel/#2026-08-17-critical-unauthenticated-flaws-and-natio)
 - August 16, 2026: Availability Shocks and Invisible Malware: When Trusted Vendors and Trusted Signals Both Fail (https://amdumdee.com/threat-intel/#2026-08-16-vendor-availability-and-stealth-malware-)
 - August 15, 2026: AI-Accelerated Exploitation: Patch-to-Attack Window Collapses to Days (https://amdumdee.com/threat-intel/#2026-08-15-ai-accelerated-exploitation-wave)
 - August 14, 2026: The Weaponization of Digital Trust: Shared Software Breaches, Signed Malware, and State-Sanctioned Private Cyber Offense (https://amdumdee.com/threat-intel/#2026-08-14-trust-exploitation-and-state-sanctioned-)
@@ -27,7 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - August 7, 2026: AI Coding-Agent Supply Chain Exposure: CI Secrets Reachable via Unprivileged GitHub Issues (https://amdumdee.com/threat-intel/#2026-08-07-ai-coding-agent-ci-secrets-exposure)
 - August 6, 2026: Ill Bloom: A 12-Year-Old Crypto Library Flaw Is Draining Wallets, and It's Part of a Bigger Entropy Problem (https://amdumdee.com/threat-intel/#2026-08-06-cryptojs-ill-bloom-wallet-drains)
 - August 5, 2026: Agentic AI Systems Are Now Both the Attacker and the Attack Surface (https://amdumdee.com/threat-intel/#2026-08-05-agentic-ai-attack-surface)
-- August 4, 2026: CISA Confirms N-central Exploitation Active in the Wild; Liechtenstein Beneficial-Ownership Registry Breached (https://amdumdee.com/threat-intel/#2026-08-04-cisa-kev-ncentral-and-liechtenstein-regi)
-- August 3, 2026: Active Exploitation of N-able N-central RMM Puts MSP Client Networks at Risk (https://amdumdee.com/threat-intel/#2026-08-03-ncentral-rmm-exploitation-and-supply-cha)
-- August 2, 2026: Healthcare Breach Disclosure Delays and the Rise of Trusted-Platform Malware Distribution (https://amdumdee.com/threat-intel/#2026-08-02-healthcare-breach-disclosure-lag-and-mes)
-- August 1, 2026: Shared Infrastructure Trust Collapse: Ad-Tech, Frameworks, Firewalls, and Travel Networks Compromised in Parallel (https://amdumdee.com/threat-intel/#2026-08-01-shared-infrastructure-trust-collapse)
