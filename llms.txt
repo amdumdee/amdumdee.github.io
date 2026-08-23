@@ -9,13 +9,14 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 248 | Rollups: 5 | Briefings: 0
+Total reports: 249 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- August 21, 2026: AI Is Compressing the Attack Timeline — From Supply Chain to Exploitation (https://amdumdee.com/threat-intel/#2026-08-21-ai-accelerated-attack-surface)
 - August 20, 2026: Three Fronts, One Pattern: Attackers Are Industrializing Access to Money, Credentials, and Code (https://amdumdee.com/threat-intel/#2026-08-20-mobile-banking-browser-supply-chain-conv)
 - August 19, 2026: The Isolation Boundaries Businesses Rely On Are Being Tested — From Cloud Runtimes to AI Labs Themselves (https://amdumdee.com/threat-intel/#2026-08-19-shared-infrastructure-isolation-failures)
 - August 18, 2026: Attackers Are Weaponizing the Platforms You Already Trust — Not Breaking Into New Ones (https://amdumdee.com/threat-intel/#2026-08-18-trusted-platform-c2-and-guest-identity-e)
@@ -30,4 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - August 8, 2026: Trust Boundary Failures Across Webmail, BI Tools, Load Balancers, and Vendor Networks (https://amdumdee.com/threat-intel/#2026-08-08-multi-vector-trust-boundary-failures)
 - August 7, 2026: AI Coding-Agent Supply Chain Exposure: CI Secrets Reachable via Unprivileged GitHub Issues (https://amdumdee.com/threat-intel/#2026-08-07-ai-coding-agent-ci-secrets-exposure)
 - August 6, 2026: Ill Bloom: A 12-Year-Old Crypto Library Flaw Is Draining Wallets, and It's Part of a Bigger Entropy Problem (https://amdumdee.com/threat-intel/#2026-08-06-cryptojs-ill-bloom-wallet-drains)
-- August 5, 2026: Agentic AI Systems Are Now Both the Attacker and the Attack Surface (https://amdumdee.com/threat-intel/#2026-08-05-agentic-ai-attack-surface)
