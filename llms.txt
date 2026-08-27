@@ -9,13 +9,17 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 251 | Rollups: 5 | Briefings: 0
+Total reports: 255 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- August 27, 2026: Modern Attack Surface: Internet-Facing Software, Edge Infrastructure, and Operational Dependency (https://amdumdee.com/threat-intel/#2026-08-27-modern-attack-surface-and-operational-re)
+- August 26, 2026: Trusted Business Pathways Are Becoming the Attack Surface (https://amdumdee.com/threat-intel/#2026-08-26-trusted-pathways-become-the-attack-surfa)
+- August 25, 2026: The Cost of Leaving Internet-Facing Control Debt Unresolved (https://amdumdee.com/threat-intel/#2026-08-25-zimbra-control-debt-and-trusted-infrastr)
+- August 24, 2026: Control Debt Across AI, Identity, Edge Infrastructure, and Data Governance (https://amdumdee.com/threat-intel/#2026-08-24-cross-domain-cyber-risk)
 - August 23, 2026: Mobile Financial Fraud and Critical Infrastructure Disruption Are Converging (https://amdumdee.com/threat-intel/#2026-08-23-mobile-and-critical-infrastructure-threa)
 - August 22, 2026: ToxicPanda 2.0 and the Cost of Trusting Built-In Platform Features (https://amdumdee.com/threat-intel/#2026-08-22-toxicpanda-and-trust-boundary-failures)
 - August 21, 2026: AI Is Compressing the Attack Timeline — From Supply Chain to Exploitation (https://amdumdee.com/threat-intel/#2026-08-21-ai-accelerated-attack-surface)
@@ -27,7 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - August 15, 2026: AI-Accelerated Exploitation: Patch-to-Attack Window Collapses to Days (https://amdumdee.com/threat-intel/#2026-08-15-ai-accelerated-exploitation-wave)
 - August 14, 2026: The Weaponization of Digital Trust: Shared Software Breaches, Signed Malware, and State-Sanctioned Private Cyber Offense (https://amdumdee.com/threat-intel/#2026-08-14-trust-exploitation-and-state-sanctioned-)
 - August 13, 2026: Coordinated Exploitation Wave Hits Enterprise Infrastructure: Logging, Commerce, and BI Platforms Under Active Attack (https://amdumdee.com/threat-intel/#2026-08-13-critical-infra-exploitation-wave)
-- August 12, 2026: AI Turns Weapon and Attack Surface: Autonomous Agent Warfare Meets Reasoning-Trace Leaks Across OpenAI, Anthropic, and Google (https://amdumdee.com/threat-intel/#2026-08-12-ai-agent-warfare-reasoning-trace-leak)
-- August 11, 2026: Shared-Network Trust Failure Shuts Down Polish Power Plant Turbine; Zero-Click Zoom RCE Patched Same Week (https://amdumdee.com/threat-intel/#2026-08-11-shared-network-trust-boundary-ot-attack)
-- August 9, 2026: Credential Theft and Missing MFA Enforcement: Snowflake Extortion Conviction and Defense-Sector Phishing Breach (https://amdumdee.com/threat-intel/#2026-08-09-credential-theft-mfa-gaps-snowflake-defe)
-- August 8, 2026: Trust Boundary Failures Across Webmail, BI Tools, Load Balancers, and Vendor Networks (https://amdumdee.com/threat-intel/#2026-08-08-multi-vector-trust-boundary-failures)
