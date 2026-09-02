@@ -9,13 +9,14 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 259 | Rollups: 5 | Briefings: 0
+Total reports: 260 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- September 1, 2026: JFrog Artifactory Auth Bypass Under Active Exploitation Days After Patch (https://amdumdee.com/threat-intel/#2026-09-01-jfrog-artifactory-auth-bypass)
 - August 31, 2026: China-Linked 'Fire Ant' Turns Core Network Infrastructure Into a Spy Platform (https://amdumdee.com/threat-intel/#2026-08-31-fire-ant-cisco-router-compromise)
 - August 30, 2026: Manchester Airports Group Breach: Scope Far Exceeds Initial Disclosure (https://amdumdee.com/threat-intel/#2026-08-30-manchester-airports-breach)
 - August 29, 2026: Mass Critical Flaws in Popular WordPress Plugins Open Door to Site Takeover (https://amdumdee.com/threat-intel/#2026-08-29-wordpress-critical-plugin-flaws)
@@ -30,4 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - August 20, 2026: Three Fronts, One Pattern: Attackers Are Industrializing Access to Money, Credentials, and Code (https://amdumdee.com/threat-intel/#2026-08-20-mobile-banking-browser-supply-chain-conv)
 - August 19, 2026: The Isolation Boundaries Businesses Rely On Are Being Tested — From Cloud Runtimes to AI Labs Themselves (https://amdumdee.com/threat-intel/#2026-08-19-shared-infrastructure-isolation-failures)
 - August 18, 2026: Attackers Are Weaponizing the Platforms You Already Trust — Not Breaking Into New Ones (https://amdumdee.com/threat-intel/#2026-08-18-trusted-platform-c2-and-guest-identity-e)
-- August 17, 2026: Wave of Unauthenticated Critical Flaws Meets Faster Nation-State Exploitation (https://amdumdee.com/threat-intel/#2026-08-17-critical-unauthenticated-flaws-and-natio)
