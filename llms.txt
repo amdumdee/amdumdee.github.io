@@ -9,13 +9,15 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 263 | Rollups: 5 | Briefings: 0
+Total reports: 265 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- September 6, 2026: MikroTrick: Unauthenticated Full Takeover of Internet-Exposed MikroTik Routers (https://amdumdee.com/threat-intel/#2026-09-06-mikrotik-mikrotrick-ssh-zeroday)
+- September 5, 2026: Manchester Airports Group: 8.8 Million Records Leaked After Ransom Refusal (https://amdumdee.com/threat-intel/#2026-09-05-manchester-airports-8-8m-data-leak)
 - September 4, 2026: Mass Exploitation: 440,000+ Attacks Target WordPress Form and Page-Builder Plugins (https://amdumdee.com/threat-intel/#2026-09-04-wordpress-super-forms-elementor-mass-exp)
 - September 3, 2026: CISA Emergency Deadline: Seven Actively Exploited Flaws Hit AI and Automation Infrastructure (https://amdumdee.com/threat-intel/#2026-09-03-cisa-kev-ai-infrastructure-exploitation)
 - September 2, 2026: AI Coding Agents Run Attacker Code Before They Ever Ask Permission (https://amdumdee.com/threat-intel/#2026-09-02-ai-coding-agents-git-config-rce)
@@ -29,5 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - August 25, 2026: The Cost of Leaving Internet-Facing Control Debt Unresolved (https://amdumdee.com/threat-intel/#2026-08-25-zimbra-control-debt-and-trusted-infrastr)
 - August 24, 2026: Control Debt Across AI, Identity, Edge Infrastructure, and Data Governance (https://amdumdee.com/threat-intel/#2026-08-24-cross-domain-cyber-risk)
 - August 23, 2026: Mobile Financial Fraud and Critical Infrastructure Disruption Are Converging (https://amdumdee.com/threat-intel/#2026-08-23-mobile-and-critical-infrastructure-threa)
-- August 22, 2026: ToxicPanda 2.0 and the Cost of Trusting Built-In Platform Features (https://amdumdee.com/threat-intel/#2026-08-22-toxicpanda-and-trust-boundary-failures)
-- August 21, 2026: AI Is Compressing the Attack Timeline — From Supply Chain to Exploitation (https://amdumdee.com/threat-intel/#2026-08-21-ai-accelerated-attack-surface)
