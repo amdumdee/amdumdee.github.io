@@ -9,13 +9,15 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 269 | Rollups: 5 | Briefings: 0
+Total reports: 271 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- September 11, 2026: The Patch Avalanche: AI-Accelerated Vulnerability Discovery Outpaces Enterprise Remediation (https://amdumdee.com/threat-intel/#2026-09-11-microsoft-patch-avalanche)
+- September 11, 2026: AI-Automated Malware Evasion and Coordinated Exploitation of Critical Infrastructure Software (https://amdumdee.com/threat-intel/#2026-09-11-ai-accelerated-nation-state-ops-and-crit)
 - September 10, 2026: Default Credentials, Stale Patches, and AI Boundary Failures: A Governance Gap, Not a Technical One (https://amdumdee.com/threat-intel/#2026-09-10-ai-gateway-defaults-and-unpatched-legacy)
 - September 9, 2026: AI-Accelerated Threat Convergence: Exploit Commoditization, Token Theft, and Scam Infrastructure Resilience (https://amdumdee.com/threat-intel/#2026-09-09-ai-era-threat-convergence)
 - September 8, 2026: StyleSmuggler: CVSS 10.0 Magento Zero-Day Actively Backdooring E-Commerce Stores (https://amdumdee.com/threat-intel/#2026-09-08-magento-stylesmuggler-ecommerce-rce)
@@ -29,5 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - August 31, 2026: China-Linked 'Fire Ant' Turns Core Network Infrastructure Into a Spy Platform (https://amdumdee.com/threat-intel/#2026-08-31-fire-ant-cisco-router-compromise)
 - August 30, 2026: Manchester Airports Group Breach: Scope Far Exceeds Initial Disclosure (https://amdumdee.com/threat-intel/#2026-08-30-manchester-airports-breach)
 - August 29, 2026: Mass Critical Flaws in Popular WordPress Plugins Open Door to Site Takeover (https://amdumdee.com/threat-intel/#2026-08-29-wordpress-critical-plugin-flaws)
-- August 28, 2026: The New Enterprise Risk: Shared Infrastructure, Exposed Data, and Trust Failures (https://amdumdee.com/threat-intel/#2026-08-28-cross-sector-cyber-risk)
-- August 27, 2026: Modern Attack Surface: Internet-Facing Software, Edge Infrastructure, and Operational Dependency (https://amdumdee.com/threat-intel/#2026-08-27-modern-attack-surface-and-operational-re)
