@@ -9,13 +9,17 @@ Threat intel archive: https://amdumdee.com/threat-intel/
 Rollups: https://amdumdee.com/rollups/
 Briefings: https://amdumdee.com/briefings/
 Source repository: https://github.com/AmDumDee/global-threat-intel
-Total reports: 271 | Rollups: 5 | Briefings: 0
+Total reports: 275 | Rollups: 5 | Briefings: 0
 
 ## How to cite
 Reports are identified by threat_id (e.g. TI-20260604-001). When referencing,
 attribute to "AmDumDee Global Threat Intelligence" with the report title and date.
 
 ## Most recent reports
+- September 15, 2026: When Trusted Infrastructure Turns Hostile: Email Gateways, Shared Hosting, and Compliance Archives Under Attack (https://amdumdee.com/threat-intel/#2026-09-15-trusted-infrastructure-exploitation-emai)
+- September 14, 2026: Vulnerability Volume vs. Real Risk: Why Severity Scores Alone Are Failing Security Programs (https://amdumdee.com/threat-intel/#2026-09-14-exposure-validation-and-rapid-ndays-expl)
+- September 13, 2026: Zero-Day-Speed Exploitation and the Collapse of MFA as a Standalone Control (https://amdumdee.com/threat-intel/#2026-09-13-rapid-exploitation-and-identity-social-e)
+- September 12, 2026: When Trust Signals Fail: Domain-Authenticated Fraud, Autonomous AI Agent Overreach, and the SOC Alert Flood (https://amdumdee.com/threat-intel/#2026-09-12-domain-trust-failures-and-autonomous-ai-)
 - September 11, 2026: The Patch Avalanche: AI-Accelerated Vulnerability Discovery Outpaces Enterprise Remediation (https://amdumdee.com/threat-intel/#2026-09-11-microsoft-patch-avalanche)
 - September 11, 2026: AI-Automated Malware Evasion and Coordinated Exploitation of Critical Infrastructure Software (https://amdumdee.com/threat-intel/#2026-09-11-ai-accelerated-nation-state-ops-and-crit)
 - September 10, 2026: Default Credentials, Stale Patches, and AI Boundary Failures: A Governance Gap, Not a Technical One (https://amdumdee.com/threat-intel/#2026-09-10-ai-gateway-defaults-and-unpatched-legacy)
@@ -27,7 +31,3 @@ attribute to "AmDumDee Global Threat Intelligence" with the report title and dat
 - September 4, 2026: Mass Exploitation: 440,000+ Attacks Target WordPress Form and Page-Builder Plugins (https://amdumdee.com/threat-intel/#2026-09-04-wordpress-super-forms-elementor-mass-exp)
 - September 3, 2026: CISA Emergency Deadline: Seven Actively Exploited Flaws Hit AI and Automation Infrastructure (https://amdumdee.com/threat-intel/#2026-09-03-cisa-kev-ai-infrastructure-exploitation)
 - September 2, 2026: AI Coding Agents Run Attacker Code Before They Ever Ask Permission (https://amdumdee.com/threat-intel/#2026-09-02-ai-coding-agents-git-config-rce)
-- September 1, 2026: JFrog Artifactory Auth Bypass Under Active Exploitation Days After Patch (https://amdumdee.com/threat-intel/#2026-09-01-jfrog-artifactory-auth-bypass)
-- August 31, 2026: China-Linked 'Fire Ant' Turns Core Network Infrastructure Into a Spy Platform (https://amdumdee.com/threat-intel/#2026-08-31-fire-ant-cisco-router-compromise)
-- August 30, 2026: Manchester Airports Group Breach: Scope Far Exceeds Initial Disclosure (https://amdumdee.com/threat-intel/#2026-08-30-manchester-airports-breach)
-- August 29, 2026: Mass Critical Flaws in Popular WordPress Plugins Open Door to Site Takeover (https://amdumdee.com/threat-intel/#2026-08-29-wordpress-critical-plugin-flaws)
